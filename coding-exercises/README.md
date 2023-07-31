@@ -24,9 +24,9 @@
     </a>
 </div>
 
-## Basic React Coding Exercises
+## BASIC REACT CODING EXERCISES
 
-## 𝗜𝗡𝗧𝗘𝗥𝗠𝗘𝗗𝗜𝗔𝗧𝗘 𝗥𝗘𝗔𝗖𝗧 𝗖𝗢𝗗𝗜𝗡𝗚 𝗘𝗫𝗥𝗘𝗖𝗜𝗦𝗘𝗦
+## INTERMEDIATE REACT CODING EXERCISES
 ### 𝗘𝗫𝗘𝗥𝗖𝗜𝗦𝗘 1
 
 
@@ -73,7 +73,7 @@ This is just a stress-test that verifies your Effect’s logic is implemented co
 
 ### 𝗘𝗫𝗘𝗥𝗖𝗜𝗦𝗘 3
 
-## Advanced React Coding Exercises
+## ADVANCED REACT CODING EXERCISES
 
 
 <!-- REFERENCE LINKS -->
