@@ -50,9 +50,11 @@ function App(props) {
 }
 ```
 <div>💡 𝗢𝗣𝗧𝗜𝗢𝗡 𝟭 ➠ 0 </div>
+
 <div>💡 𝗢𝗣𝗧𝗜𝗢𝗡 𝟮 ➠ 1 </div>
 
 <div>💡 𝗢𝗣𝗧𝗜𝗢𝗡 𝟯 ➠ 2 </div>
+
 <div>💡 𝗢𝗣𝗧𝗜𝗢𝗡 𝟰 ➠ 3 </div>
 <br />
 <details><summary>𝗔𝗡𝗦𝗪𝗘𝗥</summary>
