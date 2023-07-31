@@ -26,7 +26,10 @@
 
 ## Basic React Coding Exercises
 
-## Intermediate React Coding Exercises
+## 𝗜𝗡𝗧𝗘𝗥𝗠𝗘𝗗𝗜𝗔𝗧𝗘 𝗥𝗘𝗔𝗖𝗧 𝗖𝗢𝗗𝗜𝗡𝗚 𝗘𝗫𝗥𝗘𝗖𝗜𝗦𝗘𝗦
+### 𝗘𝗫𝗘𝗥𝗖𝗜𝗦𝗘 1
+
+
 ### 𝗘𝗫𝗘𝗥𝗖𝗜𝗦𝗘 𝟮
 ![][Intermediate] [![][useEffect Badge]][useEffect Link]
 
@@ -48,6 +51,7 @@ function App(props) {
 ```
 <div>💡 𝗢𝗣𝗧𝗜𝗢𝗡 𝟭 ➠ 0 </div>
 <div>💡 𝗢𝗣𝗧𝗜𝗢𝗡 𝟮 ➠ 1 </div>
+
 <div>💡 𝗢𝗣𝗧𝗜𝗢𝗡 𝟯 ➠ 2 </div>
 <div>💡 𝗢𝗣𝗧𝗜𝗢𝗡 𝟰 ➠ 3 </div>
 <br />
@@ -64,7 +68,11 @@ This is just a stress-test that verifies your Effect’s logic is implemented co
 <a href="https://react.dev/reference/react/useEffect#my-effect-runs-twice-when-the-component-mounts"><sup><b>See more ❱❱❱</b></sup></a>
 </p>
 </details>
+<br/>
+<div align='right'><a href="#top"><sup><b>🔝 back to top 🔝</b></sup></a></div>
+<hr/>
 
+### 𝗘𝗫𝗘𝗥𝗖𝗜𝗦𝗘 3
 
 ## Advanced React Coding Exercises
 
