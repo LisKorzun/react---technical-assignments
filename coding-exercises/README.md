@@ -1,8 +1,7 @@
-<a name="top"></a>
-
 <a href="https://github.com/LisKorzun/react---technical-assignments/tree/main#readme-top">
     <sup><b>❰❰❰ back to home</b></sup>
 </a>
+<a name="top"></a>
 
 <div align="right">
     <a href="https://react.dev/">
