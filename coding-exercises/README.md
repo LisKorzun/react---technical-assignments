@@ -27,9 +27,6 @@
 ## BASIC REACT CODING EXERCISES
 
 ## INTERMEDIATE REACT CODING EXERCISES
-### 𝗘𝗫𝗘𝗥𝗖𝗜𝗦𝗘 1
-
-
 ### EXERCISE 2𝕚
 ![][Intermediate] [![][useEffect Badge]][useEffect Link]
 
@@ -71,9 +68,49 @@ This is just a stress-test that verifies your Effect’s logic is implemented co
 <div align='right'><a href="#top"><sup><b>🔝 back to top 🔝</b></sup></a></div>
 <hr/>
 
-### 𝗘𝗫𝗘𝗥𝗖𝗜𝗦𝗘 3
 
 ## ADVANCED REACT CODING EXERCISES
+### EXERCISE 1𝕒
+![][Advanced]
+
+Which statement describes the code below?
+
+```js
+import { useState } from 'react'
+
+const getData = () => new Promise((r) => setTimeout(() => r(Date.now()), 100))
+
+function App() {
+    const [result, setResult] = useState()
+    const data = getData().then((value) => setResult(value))
+    
+    return (
+        <div>
+            {result === data.toString() ? (
+                <div>Hi</div>
+            ) : (
+                <div>Bye</div>
+            )}
+        </div>
+    )
+}
+```
+<div>𝗢𝗣𝗧𝗜𝗢𝗡 𝟭 ➠ A <code>Bye</code> message will be displayed.</div>
+<div>𝗢𝗣𝗧𝗜𝗢𝗡 𝟮 ➠ A <code>Hi</code> message will be displayed.</div>
+<div>𝗢𝗣𝗧𝗜𝗢𝗡 𝟯 ➠ The code results in a memory leak. </div>
+<div>𝗢𝗣𝗧𝗜𝗢𝗡 𝟰 ➠ <code>Maximum Call Stack Size Exceeded</code> error.</div>
+<div>𝗢𝗣𝗧𝗜𝗢𝗡 𝟱 ➠ <code>setResult</code> is never called.</div>
+<br />
+<details><summary>𝗔𝗡𝗦𝗪𝗘𝗥</summary>
+<p>
+
+##### 𝗢𝗣𝗧𝗜𝗢𝗡 𝟭
+
+</p>
+</details>
+<br/>
+<div align='right'><a href="#top"><sup><b>🔝 back to top 🔝</b></sup></a></div>
+<hr/>
 
 
 <!-- REFERENCE LINKS -->
