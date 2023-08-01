@@ -53,11 +53,13 @@
 <hr />
 
 <div align="center">
-<h2>𝙰𝚍𝚍𝚒𝚝𝚒𝚘𝚗𝚊𝚕 𝚁𝚎𝚜𝚘𝚞𝚛𝚌𝚎𝚜 𝚃𝚘 𝙷𝚎𝚕𝚙 𝚈𝚘𝚞 𝙿𝚛𝚎𝚙𝚊𝚛𝚎</h2>
+<h3>𝙰𝚍𝚍𝚒𝚝𝚒𝚘𝚗𝚊𝚕 𝚁𝚎𝚜𝚘𝚞𝚛𝚌𝚎𝚜 𝚃𝚘 𝙷𝚎𝚕𝚙 𝚈𝚘𝚞 𝙿𝚛𝚎𝚙𝚊𝚛𝚎</h3>
+<sup><b> ❖ </b></sup>
 <a href="https://taikai.network/blog/how-to-prepare-for-coding-challenges">
     <sup><b>How to prepare for coding challenges?</b></sup>
 </a>
 <br/>
+<sup><b> ❖ </b></sup>
 <a href="https://github.com/sudheerj/reactjs-interview-questions#react-interview-questions--answers">
     <sup><b>300+ React interview questions & answers</b></sup>
 </a>
