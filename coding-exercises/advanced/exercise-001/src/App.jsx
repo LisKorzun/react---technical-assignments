@@ -11,9 +11,9 @@ function App() {
     return (
         <div>
             {result === data.toString() ? (
-                <div>hello</div>
+                <div>Hi</div>
             ) : (
-                <div>good bye</div>
+                <div>Bye</div>
             )}
         </div>
     )
