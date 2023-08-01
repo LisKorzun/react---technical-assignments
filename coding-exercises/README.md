@@ -12,8 +12,6 @@
 </div>
 <br />
 
-[Go to Real Cool Heading section](#advanced-react-coding-exercises)
-
 <div align="center">
     <a href="#basic-react-coding-exercises">
         <img alt="Releases" src="https://img.shields.io/badge/BASIC%20EXERCISES-0-white?&logo=codeforces&logoColor=white&labelColor=DB6BAD&style=for-the-badge" />
@@ -32,7 +30,7 @@
 ### 𝗘𝗫𝗘𝗥𝗖𝗜𝗦𝗘 1
 
 
-### 𝗘𝗫𝗘𝗥𝗖𝗜𝗦𝗘 𝟮
+### EXERCISE 2𝒊
 ![][Intermediate] [![][useEffect Badge]][useEffect Link]
 
 Considering the code below, how many times will the `Hello` message be displayed on the console?
