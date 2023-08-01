@@ -11,7 +11,7 @@
     <h1>𝙲𝙾𝙳𝙸𝙽𝙶 𝙴𝚇𝙴𝚁𝙲𝙸𝚂𝙴𝚂</h1>
 </div>
 <br />
-
+<br />
 <div align="center">
     <a href="#basic-react-coding-exercises">
         <img alt="Releases" src="https://img.shields.io/badge/BASIC%20EXERCISES-0-white?&logo=codeforces&logoColor=white&labelColor=DB6BAD&style=for-the-badge" />
@@ -23,6 +23,7 @@
         <img alt="Releases" src="https://img.shields.io/badge/ADVANCED%20EXERCISES-1-white?&logo=codeforces&logoColor=white&labelColor=44AC99&style=for-the-badge" />
     </a>
 </div>
+<br />
 
 ## BASIC REACT CODING EXERCISES
 
@@ -65,9 +66,6 @@ This is just a stress-test that verifies your Effect’s logic is implemented co
 </p>
 </details>
 <br/>
-
-[🔝 ᴛᴏᴘ](#top)
-
 <div align='right'><a href="#top"><sup><b>🔝 back to top 🔝</b></sup></a></div>
 <hr/>
 
