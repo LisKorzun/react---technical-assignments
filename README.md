@@ -21,8 +21,8 @@
 <sup>Code questions with multiple choice. <br /> Learn the most important concepts first.</sup>
 <br />
 <br />
-<a href="https://github.com/LisKorzun/react---technical-assignments/tree/main/coding-exercises#top">
-    <sup><b>explore questions ❱❱❱</b></sup>
+<a href="https://github.com/LisKorzun/react---technical-assignments/tree/main/coding-exercises">
+    <sup><b>explore exercises ❱❱❱</b></sup>
 </a>
 <br />
 <br />
@@ -32,7 +32,7 @@
     <sup>Ass your coding skills and problem-solving abilities in a practical way.<br /> Find and correct mistakes.</sup>
     <br />
     <br />
-    <a href="https://github.com/LisKorzun/react---technical-assignments/tree/main/coding-challenges#top">
+    <a href="https://github.com/LisKorzun/react---technical-assignments/tree/main/coding-challenges">
         <sup><b>explore challenges ❱❱❱</b></sup>
     </a>
 </div>
@@ -43,7 +43,7 @@
 <sup>Coding tasks to complete on your own time.<br /> Complete real-world tasks and build out real-world applications.</sup>
 <br />
 <br />
-<a href="https://github.com/LisKorzun/react---technical-assignments/tree/main/take-home-projects#top">
+<a href="https://github.com/LisKorzun/react---technical-assignments/tree/main/take-home-projects">
 <sup><b>explore tasks ❱❱❱</b></sup>
 </a>
 <br />

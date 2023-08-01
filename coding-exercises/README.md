@@ -65,6 +65,9 @@ This is just a stress-test that verifies your Effect’s logic is implemented co
 </p>
 </details>
 <br/>
+
+[🔝 ᴛᴏᴘ](#top)
+
 <div align='right'><a href="#top"><sup><b>🔝 back to top 🔝</b></sup></a></div>
 <hr/>
 
