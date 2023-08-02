@@ -21,6 +21,7 @@
 </details><hr/>
 
 <details><summary><b>Wʜᴀᴛ ɪs ᴀ Rᴇᴀᴄᴛ ᴄᴏᴍᴘᴏɴᴇɴᴛ?</b></summary>
+    <br/>
     <p>React applications are built from isolated pieces of UI called components. 
     A component is a piece of the UI (user interface) that has its own logic and appearance.  
     <b>A React component is a JavaScript function that returns markup.</b> 
