@@ -9,10 +9,7 @@
     as well as your skill and familiarity with the most-used advanced concepts.</b></sup>
     <br />
     <br />
-    <a href="https://react.dev/reference/react"><sup><b>React Hooks</b></sup></a><sup><b> ❖ </b></sup>
-    <a href="https://react.dev/learn/managing-state"><sup><b>State Management</b></sup></a><sup><b> ❖ </b></sup>
-    <a href="https://www.patterns.dev/posts/reactjs"><sup><b>Design Patterns</b></sup></a><sup><b> ❖ </b></sup>
-    <a href="https://react.dev/learn/escape-hatches"><sup><b>Advanced Concepts</b></sup></a>
+    <a href="https://react.dev/learn/escape-hatches"><sup><b>Why should I engage in programming challenges?</b></sup></a>
 </div>
 <br />
 <br/>
@@ -21,7 +18,7 @@
 <sup>Code questions with multiple choice. <br /> Learn the most important concepts first.</sup>
 <br />
 <br />
-<a href="https://github.com/LisKorzun/react---technical-assignments/tree/main/coding-exercises">
+<a href="https://github.com/LisKorzun/react---technical-assignments/tree/main/coding-exercises/README.md">
     <sup><b>explore exercises ❱❱❱</b></sup>
 </a>
 <br />
@@ -32,7 +29,7 @@
     <sup>Ass your coding skills and problem-solving abilities in a practical way.<br /> Find and correct mistakes.</sup>
     <br />
     <br />
-    <a href="https://github.com/LisKorzun/react---technical-assignments/tree/main/coding-challenges">
+    <a href="https://github.com/LisKorzun/react---technical-assignments/tree/main/coding-challenges/README.md">
         <sup><b>explore challenges ❱❱❱</b></sup>
     </a>
 </div>
@@ -43,7 +40,7 @@
 <sup>Coding tasks to complete on your own time.<br /> Complete real-world tasks and build out real-world applications.</sup>
 <br />
 <br />
-<a href="https://github.com/LisKorzun/react---technical-assignments/tree/main/take-home-projects">
+<a href="https://github.com/LisKorzun/react---technical-assignments/tree/main/take-home-projects/README.md">
 <sup><b>explore tasks ❱❱❱</b></sup>
 </a>
 <br />
@@ -53,16 +50,37 @@
 <hr />
 
 <div align="center">
-<h3>𝙰𝚍𝚍𝚒𝚝𝚒𝚘𝚗𝚊𝚕 𝚁𝚎𝚜𝚘𝚞𝚛𝚌𝚎𝚜 𝚃𝚘 𝙷𝚎𝚕𝚙 𝚈𝚘𝚞 𝙿𝚛𝚎𝚙𝚊𝚛𝚎</h3>
-<sup><b> ❖ </b></sup>
-<a href="https://taikai.network/blog/how-to-prepare-for-coding-challenges">
-    <sup><b>How to prepare for coding challenges?</b></sup>
-</a>
-<br/>
-<sup><b> ❖ </b></sup>
-<a href="https://github.com/sudheerj/reactjs-interview-questions#react-interview-questions--answers">
-    <sup><b>300+ React interview questions & answers</b></sup>
-</a>
+    <h3>𝙴𝚡𝚝𝚛𝚊 𝙼𝚊𝚝𝚎𝚛𝚒𝚊𝚕𝚜</h3>
+    <a href="https://react.dev/reference/react">
+        <sup><b>React Interview Questions ❱❱❱</b></sup>
+    </a>
+    <br/>
+    <a href="https://react.dev/reference/react">
+        <sup><b>React Best Practices ❱❱❱</b></sup>
+    </a>
+    <br/>
+    <br/>
+    <div>〰〰〰〰〰〰〰〰〰〰〰〰〰〰</div>
+    <h3>𝙰𝚍𝚍𝚒𝚝𝚒𝚘𝚗𝚊𝚕 𝚁𝚎𝚜𝚘𝚞𝚛𝚌𝚎𝚜 𝚃𝚘 𝙷𝚎𝚕𝚙 𝚈𝚘𝚞 𝙿𝚛𝚎𝚙𝚊𝚛𝚎</h3>
+    <a href="https://react.dev/reference/react">
+        <sup><b>Built-in React hooks api reference ❱❱❱</b></sup>
+    </a>
+    <br/>
+    <a href="https://react.dev/learn/managing-state">
+        <sup><b>Managing state in React ❱❱❱</b></sup>
+    </a>
+    <br/>
+    <a href="https://react.dev/learn/escape-hatches">
+        <sup><b>Advanced Concepts ❱❱❱</b></sup>
+    </a>
+    <br/>
+    <a href="https://www.patterns.dev/posts/reactjs">
+        <sup><b>Design Patterns ❱❱❱</b></sup>
+    </a>
+    <br/>
+    <a href="https://github.com/sudheerj/reactjs-interview-questions#react-interview-questions--answers">
+        <sup><b>300+ React interview questions & answers ❱❱❱</b></sup>
+    </a>
 </div>
 <hr />
 
