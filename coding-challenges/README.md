@@ -6,7 +6,7 @@
 
 <div align="right">
     <a href="https://react.dev/">
-        <img alt="react logo" src="/react-logo.png" height="150"/>
+        <img alt="react logo" src="/extra-materials/images/react-logo.png" height="150"/>
     </a>
     <h1>𝙲𝙾𝙳𝙸𝙽𝙶 𝙲𝙷𝙰𝙻𝙻𝙴𝙽𝙶𝙴𝚂</h1>
     <sup>Coding challenges are a great way to strengthen your problem-solving skills, coding fundamentals, and speed.<br />
