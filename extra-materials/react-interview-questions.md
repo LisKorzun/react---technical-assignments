@@ -24,7 +24,8 @@
     <p>React applications are built from isolated pieces of UI called components. 
     A component is a piece of the UI (user interface) that has its own logic and appearance.  
     <b>A React component is a JavaScript function that returns markup.</b> 
-    Components can be as small as a button, or as large as an entire page. </p>
+    Components can be as small as a button, or as large as an entire page. 
+    React component names must always start with a capital letter, while HTML tags must be lowercase.</p>
     
 ```js
 function MyButton() {
@@ -33,8 +34,18 @@ function MyButton() {
   );
 }
 ```
+<sub>React lets you combine your markup, CSS, and JavaScript into custom “components”, reusable UI elements for your app.
+Just like with HTML tags, you can compose, order and nest components to design whole pages. As your project grows, 
+you will notice that many of your designs can be composed by reusing components you already wrote, speeding up your development.</sub>
 </details><hr/>
 
-<details><summary><b></b></summary>
+<details><summary><b>How to define a component?</b> </summary>
     <p></p>
 </details><hr/>
+
+> - React lets you create components, reusable UI elements for your app. 
+> - In a React app, every piece of UI is a component. 
+> - React components are regular JavaScript functions except:
+>   - Their names always begin with a capital letter. 
+>   - They return JSX markup.
+
