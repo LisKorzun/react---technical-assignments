@@ -16,8 +16,8 @@
     <br/><p>React (aka React.js or ReactJS) is an open-source front-end JavaScript library 
     that is used for building composable user interfaces (UI), especially for single-page applications. 
     It is used for handling view layer for web and mobile apps based on components in a declarative approach. <br/>
-    <sub>React was created by Jordan Walke, a software engineer working for Facebook. 
-    React was first deployed on Facebook's News Feed in 2011 and on Instagram in 2012.</sub></p>
+    <div align='center'><sub>✧ React was created by Jordan Walke, a software engineer working for Facebook. ✧<br/>
+    ✧ React was first deployed on Facebook's News Feed in 2011 and on Instagram in 2012. ✧</sub></div></p>
 </details><hr/>
 
 <details><summary><b>Wʜᴀᴛ ɪs ᴀ Rᴇᴀᴄᴛ ᴄᴏᴍᴘᴏɴᴇɴᴛ?</b></summary>
@@ -36,9 +36,9 @@ function MyButton() {
 }
 ```
 <div align='center'>
-<div><sub>✧ React lets you combine your markup, CSS, and JavaScript into custom “components”, reusable UI elements for your app. ✧</sub></div>
-<div><sub>✧ Just like with HTML tags, you can compose, order and nest components to design whole pages. ✧<br/> ✧ As your project grows, 
-you will notice that many of your designs can be composed by reusing components you already wrote, speeding up your development.</sub></div>
+    <sup>✧ React lets you combine your markup, CSS, and JavaScript into custom “components”, reusable UI elements for your app. ✧<br/>
+    ✧ Just like with HTML tags, you can compose, order and nest components to design whole pages. ✧<br/>✧ As your project grows, 
+    you will notice that many of your designs can be composed by reusing components you already wrote, speeding up your development. ✧</sup>
 </div>
 </details><hr/>
 
@@ -46,9 +46,21 @@ you will notice that many of your designs can be composed by reusing components 
     <p></p>
 </details><hr/>
 
-> - React lets you create components, reusable UI elements for your app. 
-> - In a React app, every piece of UI is a component. 
-> - React components are regular JavaScript functions except:
->   - Their names always begin with a capital letter. 
->   - They return JSX markup.
+<div align='center'>
 
+![][Recap]
+
+React lets you create components, reusable UI elements for your app.
+
+In a React app, every piece of UI is a component.
+
+React components are regular JavaScript functions except:
+
+Their names always begin with a capital letter.
+They return JSX markup.
+
+</div>
+
+
+
+[Recap]: https://img.shields.io/badge/%20-recap-149eca.svg?&labelColor=23272f&logo=react&style=for-the-badge
