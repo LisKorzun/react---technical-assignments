@@ -11,3 +11,30 @@
 </div>
 <br />
 <br />
+
+<details><summary><b>Wʜᴀᴛ ɪs Rᴇᴀᴄᴛ?</b></summary>
+    <p>React (aka React.js or ReactJS) is an open-source front-end JavaScript library 
+    that is used for building composable user interfaces (UI),especially for single-page applications. 
+    It is used for handling view layer for web and mobile apps based on components in a declarative approach. <br/>
+    React was created by Jordan Walke, a software engineer working for Facebook. 
+    React was first deployed on Facebook's News Feed in 2011 and on Instagram in 2012.</p>
+</details><hr/>
+
+<details><summary><b>Wʜᴀᴛ ɪs ᴀ Rᴇᴀᴄᴛ ᴄᴏᴍᴘᴏɴᴇɴᴛ?</b></summary>
+    <p>React applications are built from isolated pieces of UI called components. 
+    A component is a piece of the UI (user interface) that has its own logic and appearance.  
+    A <b>React component</b> is a JavaScript function that returns markup. 
+    Components can be as small as a button, or as large as an entire page. </p>
+    
+```js
+function MyButton() {
+  return (
+    <button>I'm a button</button>
+  );
+}
+```
+</details><hr/>
+
+<details><summary><b></b></summary>
+    <p></p>
+</details><hr/>

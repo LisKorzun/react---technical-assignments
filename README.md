@@ -4,7 +4,7 @@
     <a href="https://react.dev/">
         <img alt="react logo" src="/extra-materials/images/react-logo.png" height="150"/>
     </a>
-    <h1>𝚁𝙴𝙰𝙲𝚃 𝚃𝙴𝙲𝙷𝙽𝙸𝙲𝙰𝙻 𝙰𝚂𝚂𝙸𝙶𝙽𝙼𝙴𝙽𝚃𝚂</h1>
+    <h1>𝚃𝙴𝙲𝙷𝙽𝙸𝙲𝙰𝙻 𝙰𝚂𝚂𝙸𝙶𝙽𝙼𝙴𝙽𝚃𝚂</h1>
     <sup><b>You can evaluate yourself in the most important concepts in React,<br /> 
     as well as your skill and familiarity with the most-used advanced concepts.</b></sup>
     <br />
