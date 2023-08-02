@@ -53,16 +53,16 @@
 
 <div align="center">
     <h3>𝙴𝚡𝚝𝚛𝚊 𝙼𝚊𝚝𝚎𝚛𝚒𝚊𝚕𝚜</h3>
-    <a href="https://github.com/LisKorzun/react---technical-assignments/blob/main/extra-materials/react-interview-questions.md">
-        <sup><b>React Interview Questions ❱❱❱</b></sup>
+    <a href="https://github.com/LisKorzun/react---technical-assignments/blob/main/extra-materials/react-handbook.md">
+        <sup><img alt="react logo" src="/extra-materials/images/react-logo.png" height="15"/><b>React Handbook ❱❱❱</b></sup>
     </a>
     <br/>
-    <a href="https://github.com/LisKorzun/react---technical-assignments/blob/main/extra-materials/react-best-practices.md">
-        <sup><b>React Best Practices ❱❱❱</b></sup>
+    <a href="https://github.com/LisKorzun/react---technical-assignments/blob/main/extra-materials/react-pitfalls-and-best-practices.md">
+        <sup><b>React Pitfalls & Best Practices ❱❱❱</b></sup>
     </a>
     <br/>
     <br/>
-    <div>〰〰〰〰〰〰〰〰〰〰〰〰〰〰</div>
+    <div>〰〰〰〰〰〰〰〰〰〰</div>
     <h3>𝙰𝚍𝚍𝚒𝚝𝚒𝚘𝚗𝚊𝚕 𝚁𝚎𝚜𝚘𝚞𝚛𝚌𝚎𝚜 𝚃𝚘 𝙷𝚎𝚕𝚙 𝚈𝚘𝚞 𝙿𝚛𝚎𝚙𝚊𝚛𝚎</h3>
     <a href="https://react.dev/reference/react">
         <sup><b>Built-in React hooks api reference</b></sup>

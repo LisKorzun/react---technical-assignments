@@ -8,6 +8,10 @@
         <img alt="react logo" src="/extra-materials/images/react-logo.png" height="150"/>
     </a>
     <h1>𝙷𝙰𝙽𝙳𝙱𝙾𝙾𝙺</h1>
+    <sup><b>Based on official </b></sup>
+    <a href="https://react.dev/learn"><sup><b>React Docs ❱❱❱</b></sup></a>
+    <br />
+    <br />
 </div>
 <br />
 <br />
@@ -24,7 +28,7 @@
     <br/>
     <p>React applications are built from isolated pieces of UI called components. 
     A component is a piece of the UI (user interface) that has its own logic and appearance.  
-    <b>A React component is a JavaScript function that returns markup.</b> 
+    <b><u>A React component is a JavaScript function that returns markup.</u></b> 
     Components can be as small as a button, or as large as an entire page. 
     React component names must always start with a capital letter, while HTML tags must be lowercase.</p>
     
@@ -43,10 +47,35 @@ function MyButton() {
 </details><hr/>
 
 <details><summary><b>How to define a component?</b> </summary>
-    <p></p>
+    <br/><p>
+    React component is a JavaScript function that you can sprinkle with markup.
+
+```js
+export default function Profile() {
+  return (
+    <img
+      src="https://i.imgur.com/MK3eW3Am.jpg"
+      alt="Katherine Johnson"
+    />
+  )
+}
+
+```
+**Step 1: Export the component.**
+The `export default` prefix is a standard JavaScript syntax (not specific to React).
+
+**Step 2: Define the function.** 
+With `function Profile() { }` you define a JavaScript function with the name Profile.
+
+**Step 3: Add markup.**
+The component returns an <img /> tag with src and alt attributes. <img /> is written like HTML, but it is actually JavaScript under the hood! This syntax is called JSX, and it lets you embed markup inside JavaScript.
+
+
+
+</p>
 </details><hr/>
 
-&nbsp;&nbsp;&nbsp;![][Recap]
+&nbsp;&nbsp;&nbsp;&nbsp;![][Recap]
 - React lets you create components, reusable UI elements for your app.
 - In a React app, every piece of UI is a component.
 - React components are regular JavaScript functions except:
