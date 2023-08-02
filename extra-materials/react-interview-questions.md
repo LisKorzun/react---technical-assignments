@@ -13,7 +13,7 @@
 <br />
 
 <details><summary><b>Wʜᴀᴛ ɪs Rᴇᴀᴄᴛ?</b></summary>
-    <p>React (aka React.js or ReactJS) is an open-source front-end JavaScript library 
+    <br/><p>React (aka React.js or ReactJS) is an open-source front-end JavaScript library 
     that is used for building composable user interfaces (UI), especially for single-page applications. 
     It is used for handling view layer for web and mobile apps based on components in a declarative approach. <br/>
     <sub>React was created by Jordan Walke, a software engineer working for Facebook. 
@@ -35,9 +35,11 @@ function MyButton() {
   );
 }
 ```
-<sub>React lets you combine your markup, CSS, and JavaScript into custom “components”, reusable UI elements for your app.
-Just like with HTML tags, you can compose, order and nest components to design whole pages. As your project grows, 
-you will notice that many of your designs can be composed by reusing components you already wrote, speeding up your development.</sub>
+<div align='center'>
+<div><sub>✧ React lets you combine your markup, CSS, and JavaScript into custom “components”, reusable UI elements for your app. ✧</sub></div>
+<div><sub>✧ Just like with HTML tags, you can compose, order and nest components to design whole pages. ✧<br/> ✧ As your project grows, 
+you will notice that many of your designs can be composed by reusing components you already wrote, speeding up your development.</sub></div>
+</div>
 </details><hr/>
 
 <details><summary><b>How to define a component?</b> </summary>
