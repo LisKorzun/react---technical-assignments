@@ -46,12 +46,12 @@ function MyButton() {
     <p></p>
 </details><hr/>
 
-> &nbsp;&nbsp;&nbsp;![][Recap]
-> - React lets you create components, reusable UI elements for your app.
-> - In a React app, every piece of UI is a component.
-> - React components are regular JavaScript functions except:
->   - Their names always begin with a capital letter. 
->   - They return JSX markup.
+&nbsp;&nbsp;&nbsp;![][Recap]
+- React lets you create components, reusable UI elements for your app.
+- In a React app, every piece of UI is a component.
+- React components are regular JavaScript functions except:
+  - Their names always begin with a capital letter. 
+  - They return JSX markup.
 
 
-[Recap]: https://img.shields.io/badge/%20-recap-149eca.svg?&labelColor=23272f&logo=react&style=for-the-badge
+[Recap]: https://img.shields.io/badge/recap-149eca.svg?&logo=react&logoColor=white&style=for-the-badge
