@@ -2,14 +2,16 @@
 
 <div align="right">
     <a href="https://react.dev/">
-        <img alt="react logo" src="https://github.com/LisKorzun/react---technical-assignments/blob/main/react-logo.png" height="150"/>
+        <img alt="react logo" src="/extra-materials/images/react-logo.png" height="150"/>
     </a>
     <h1>𝚁𝙴𝙰𝙲𝚃 𝚃𝙴𝙲𝙷𝙽𝙸𝙲𝙰𝙻 𝙰𝚂𝚂𝙸𝙶𝙽𝙼𝙴𝙽𝚃𝚂</h1>
     <sup><b>You can evaluate yourself in the most important concepts in React,<br /> 
     as well as your skill and familiarity with the most-used advanced concepts.</b></sup>
     <br />
     <br />
-    <a href="https://react.dev/learn/escape-hatches"><sup><b>Why should I engage in programming challenges?</b></sup></a>
+    <a href="https://github.com/LisKorzun/react---technical-assignments/blob/main/extra-materials/why-should-i-engage-in-programming-challenges.md">
+        <sup><b>Why should I engage in programming challenges?</b></sup>
+    </a>
 </div>
 <br />
 <br/>
@@ -51,11 +53,11 @@
 
 <div align="center">
     <h3>𝙴𝚡𝚝𝚛𝚊 𝙼𝚊𝚝𝚎𝚛𝚒𝚊𝚕𝚜</h3>
-    <a href="https://react.dev/reference/react">
+    <a href="https://github.com/LisKorzun/react---technical-assignments/blob/main/extra-materials/react-interview-questions.md">
         <sup><b>React Interview Questions ❱❱❱</b></sup>
     </a>
     <br/>
-    <a href="https://react.dev/reference/react">
+    <a href="https://github.com/LisKorzun/react---technical-assignments/blob/main/extra-materials/react-best-practices.md">
         <sup><b>React Best Practices ❱❱❱</b></sup>
     </a>
     <br/>
@@ -63,23 +65,23 @@
     <div>〰〰〰〰〰〰〰〰〰〰〰〰〰〰</div>
     <h3>𝙰𝚍𝚍𝚒𝚝𝚒𝚘𝚗𝚊𝚕 𝚁𝚎𝚜𝚘𝚞𝚛𝚌𝚎𝚜 𝚃𝚘 𝙷𝚎𝚕𝚙 𝚈𝚘𝚞 𝙿𝚛𝚎𝚙𝚊𝚛𝚎</h3>
     <a href="https://react.dev/reference/react">
-        <sup><b>Built-in React hooks api reference ❱❱❱</b></sup>
+        <sup><b>Built-in React hooks api reference</b></sup>
     </a>
     <br/>
     <a href="https://react.dev/learn/managing-state">
-        <sup><b>Managing state in React ❱❱❱</b></sup>
+        <sup><b>Managing state in React</b></sup>
     </a>
     <br/>
     <a href="https://react.dev/learn/escape-hatches">
-        <sup><b>Advanced Concepts ❱❱❱</b></sup>
+        <sup><b>Advanced concepts</b></sup>
     </a>
     <br/>
     <a href="https://www.patterns.dev/posts/reactjs">
-        <sup><b>Design Patterns ❱❱❱</b></sup>
+        <sup><b>Design patterns</b></sup>
     </a>
     <br/>
     <a href="https://github.com/sudheerj/reactjs-interview-questions#react-interview-questions--answers">
-        <sup><b>300+ React interview questions & answers ❱❱❱</b></sup>
+        <sup><b>300+ React interview questions & answers</b></sup>
     </a>
 </div>
 <hr />
