@@ -78,6 +78,32 @@ or you must wrap it in a pair of parentheses.**
 </div>
 </details><hr/>
 
+<details><summary><b>How to use components?</b></summary><br/>
+
+Once you’ve defined your `ComponentA` component, you can nest it inside other components e.g. `ComponentB`.
+
+```js
+function ComponentA() {
+  return <div>Component A</div>;
+}
+
+export default function ComponentB() {
+  return (
+          <>
+            <p>Component B</p>
+            <ComponentA />
+          </>
+  );
+}
+```
+
+Because the `ComponentA` component is rendered inside `ComponentB` we can say that
+`ComponentB` is a **parent** component, rendering `ComponentA` as a “**child**”. 
+
+**⛓ This is part of the magic of React: you can define a component once, 
+and then use it in as many places and as many times as you like.**
+</details><hr/>
+
 &nbsp;&nbsp;&nbsp;&nbsp;![][Recap]
 - React lets you create components, reusable UI elements for your app.
 - In a React app, every piece of UI is a component.

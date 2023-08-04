@@ -1,4 +1,5 @@
 ### 𝗘𝗫𝗘𝗥𝗖𝗜𝗦𝗘 𝟮
+![][Intermediate]
 
 Considering the code below, how many times will the `Hello` message be displayed on the console?
 
@@ -16,10 +17,10 @@ function App(props) {
     return <div>{message}</div>
 }
 ```
-<div>💡 𝗢𝗣𝗧𝗜𝗢𝗡 𝟭 ➠ 0 </div>
-<div>💡 𝗢𝗣𝗧𝗜𝗢𝗡 𝟮 ➠ 1 </div>
-<div>💡 𝗢𝗣𝗧𝗜𝗢𝗡 𝟯 ➠ 2 </div>
-<div>💡 𝗢𝗣𝗧𝗜𝗢𝗡 𝟰 ➠ 3 </div>
+<div>𝗢𝗣𝗧𝗜𝗢𝗡 𝟭 ➠ 0 </div>
+<div>𝗢𝗣𝗧𝗜𝗢𝗡 𝟮 ➠ 1 </div>
+<div>𝗢𝗣𝗧𝗜𝗢𝗡 𝟯 ➠ 2 </div>
+<div>𝗢𝗣𝗧𝗜𝗢𝗡 𝟰 ➠ 3 </div>
 <br />
 <details><summary>𝗔𝗡𝗦𝗪𝗘𝗥</summary>
 <p>
@@ -34,3 +35,5 @@ This is just a stress-test that verifies your Effect’s logic is implemented co
 <a href="https://react.dev/reference/react/useEffect#my-effect-runs-twice-when-the-component-mounts"><sup><b>See more ❱❱❱</b></sup></a>
 </p>
 </details>
+
+[Intermediate]: https://img.shields.io/badge/INTERMEDIATE-6B75DB?&logo=codeforces&logoColor=white&labelColor=6B75DB
