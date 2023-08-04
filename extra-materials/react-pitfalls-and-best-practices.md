@@ -23,7 +23,8 @@
 </details><hr/>
 
 <details><summary><b>Return statements of React components can be written all on one line or must be wrapped in a pair of parentheses.</b></summary>
-    <br/><p>Without parentheses, any code on the lines after return will be ignored!
+
+- Without parentheses, any code on the lines after return will be ignored!
     <div align='right'>
         <a href="https://react.dev/learn/your-first-component#step-3-add-markup">
             <sup><b>React Docs ❱❱❱</b></sup>
