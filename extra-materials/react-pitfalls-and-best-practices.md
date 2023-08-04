@@ -22,7 +22,8 @@
 </blockquote>
 </details><hr/>
 
-<details><summary><b>Return statements of React components can be written all on one line or must be wrapped in a pair of parentheses.</b></summary>
+<details>
+    <summary><b>Return statements of React components can be written all on one line or must be wrapped in a pair of parentheses.</b></summary><br/>
 
 - Without parentheses, any code on the lines after return will be ignored!
     <div align='right'>
