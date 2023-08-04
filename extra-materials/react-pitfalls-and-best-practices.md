@@ -13,23 +13,20 @@
 <br />
 
 <details><summary><b>React components names must start with a capital letter.</b></summary>
-    <br/><p><i>React components are regular JavaScript functions, but their names must start with a capital letter or they won’t work!</i></p>
+    <blockquote>React components are regular JavaScript functions, but their names must start with a capital letter or they won’t work!
     <div align='right'>
         <a href="https://react.dev/learn/your-first-component#step-2-define-the-function">
             <sup><b>React Docs ❱❱❱</b></sup>
         </a>
     </div>
+</blockquote>
 </details><hr/>
 
 <details><summary><b>Return statements of React components can be written all on one line or must be wrapped in a pair of parentheses.</b></summary>
-    <br/><p><sup>Without parentheses, any code on the lines after return will be ignored! </sup>
-    <a href="https://react.dev/learn/your-first-component#step-3-add-markup">
-            <sup><b>❱❱❱</b></sup>
-        </a></p>
-
-[//]: # (    <div align='right'>)
-[//]: # (        <a href="https://react.dev/learn/your-first-component#step-3-add-markup">)
-[//]: # (            <sup><b>React Docs ❱❱❱</b></sup>)
-[//]: # (        </a>)
-[//]: # (    </div>)
+    <br/><p>Without parentheses, any code on the lines after return will be ignored!
+    <div align='right'>
+        <a href="https://react.dev/learn/your-first-component#step-3-add-markup">
+            <sup><b>React Docs ❱❱❱</b></sup>
+        </a>
+    </div>
 </details><hr/>
