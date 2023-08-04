@@ -13,7 +13,7 @@
 <br />
 
 <details><summary><b>React components names must start with a capital letter.</b></summary>
-    <br/><p>React components are regular JavaScript functions, but their names must start with a capital letter or they won’t work!</p>
+    <br/><p><i>React components are regular JavaScript functions, but their names must start with a capital letter or they won’t work!</i></p>
     <div align='right'>
         <a href="https://react.dev/learn/your-first-component#step-2-define-the-function">
             <sup><b>React Docs ❱❱❱</b></sup>
