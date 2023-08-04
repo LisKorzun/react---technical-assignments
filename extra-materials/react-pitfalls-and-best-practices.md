@@ -11,8 +11,6 @@
 </div>
 <br />
 <br />
-<br />
-<br />
 
 <details><summary><b>React components names must start with a capital letter.</b></summary>
     <br/><p>React components are regular JavaScript functions, but their names must start with a capital letter or they won’t work!</p>
@@ -21,4 +19,17 @@
             <sup><b>React Docs ❱❱❱</b></sup>
         </a>
     </div>
+</details><hr/>
+
+<details><summary><b>Return statements of React components can be written all on one line or must be wrapped in a pair of parentheses.</b></summary>
+    <br/><p><sup>Without parentheses, any code on the lines after return will be ignored! </sup>
+    <a href="https://react.dev/learn/your-first-component#step-3-add-markup">
+            <sup><b>❱❱❱</b></sup>
+        </a></p>
+
+[//]: # (    <div align='right'>)
+[//]: # (        <a href="https://react.dev/learn/your-first-component#step-3-add-markup">)
+[//]: # (            <sup><b>React Docs ❱❱❱</b></sup>)
+[//]: # (        </a>)
+[//]: # (    </div>)
 </details><hr/>
