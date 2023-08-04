@@ -7,7 +7,18 @@
     <a href="https://react.dev/">
         <img alt="react logo" src="/extra-materials/images/react-logo.png" height="150"/>
     </a>
-    <h1>𝙱𝙴𝚂𝚃 𝙿𝚁𝙰𝙲𝚃𝙸𝙲𝙴𝚂</h1>
+    <h1>𝙿𝙸𝚃𝙵𝙰𝙻𝙻𝚂 & 𝙱𝙴𝚂𝚃 𝙿𝚁𝙰𝙲𝚃𝙸𝙲𝙴𝚂</h1>
 </div>
 <br />
 <br />
+<br />
+<br />
+
+<details><summary><b>React components names must start with a capital letter.</b></summary>
+    <br/><p>React components are regular JavaScript functions, but their names must start with a capital letter or they won’t work!</p>
+    <div align='right'>
+        <a href="https://react.dev/learn/your-first-component#step-2-define-the-function">
+            <sup><b>React Docs ❱❱❱</b></sup>
+        </a>
+    </div>
+</details><hr/>

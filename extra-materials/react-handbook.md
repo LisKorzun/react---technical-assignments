@@ -24,7 +24,7 @@
     ✧ React was first deployed on Facebook's News Feed in 2011 and on Instagram in 2012. ✧</sub></div></p>
 </details><hr/>
 
-<details><summary><b>What is React component?</b></summary>
+<details><summary><b>What is a React component?</b></summary>
     <br/>
     <p>React applications are built from isolated pieces of UI called components. 
     A component is a piece of the UI (user interface) that has its own logic and appearance.  
@@ -47,8 +47,7 @@ function MyButton() {
 </details><hr/>
 
 <details><summary><b>How to define a component?</b> </summary>
-    <br/><p>
-    React component is a JavaScript function that you can sprinkle with markup.
+    <br/><p>React component is a JavaScript function that you can sprinkle with markup.</p>
 
 ```js
 export default function Profile() {
@@ -77,7 +76,6 @@ or you must wrap it in a pair of parentheses.**
   <sup>✧ There are still a few rare class component use cases that do not yet have a Hook-based equivalent. 
   <br/>Class components remain supported, and are documented in the <a href="https://react.dev/reference/react/legacy">Legacy API</a> section. ✧</sup>
 </div>
-</p>
 </details><hr/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;![][Recap]
