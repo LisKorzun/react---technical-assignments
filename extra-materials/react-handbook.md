@@ -68,10 +68,15 @@ The `export default` prefix is a standard JavaScript syntax (not specific to Rea
 With `function Profile() { }` you define a JavaScript function with the name Profile.
 
 **Step 3: Add markup.**
-The component returns an <img /> tag with src and alt attributes. <img /> is written like HTML, but it is actually JavaScript under the hood! This syntax is called JSX, and it lets you embed markup inside JavaScript.
+The component returns an <img /> tag with src and alt attributes. <img /> is written like HTML, 
+but it is actually JavaScript under the hood! This syntax is called [JSX](https://react.dev/learn/writing-markup-with-jsx), and it lets you embed markup inside JavaScript.
 
-
-
+**🕸 Return statements can be written all on one line 
+or you must wrap it in a pair of parentheses. 🕸**
+<div align="center">
+  <sup>✧ There are still a few rare class component use cases that do not yet have a Hook-based equivalent. 
+Class components remain supported, and are documented in the <a href="https://react.dev/reference/react/legacy">Legacy API</a> section. ✧</sup>
+</div>
 </p>
 </details><hr/>
 

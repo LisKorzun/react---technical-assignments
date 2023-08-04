@@ -54,7 +54,7 @@
 <div align="center">
     <h3>𝙴𝚡𝚝𝚛𝚊 𝙼𝚊𝚝𝚎𝚛𝚒𝚊𝚕𝚜</h3>
     <a href="https://github.com/LisKorzun/react---technical-assignments/blob/main/extra-materials/react-handbook.md">
-        <sup><img alt="react logo" src="/extra-materials/images/react-logo.png" height="15"/><b>React Handbook ❱❱❱</b></sup>
+        <sup><b>React Handbook ❱❱❱</b></sup>
     </a>
     <br/>
     <a href="https://github.com/LisKorzun/react---technical-assignments/blob/main/extra-materials/react-pitfalls-and-best-practices.md">
