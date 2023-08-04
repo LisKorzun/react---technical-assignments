@@ -31,3 +31,33 @@
         </a>
     </div>
 </details><hr/>
+
+<details><summary><b>Never define a component inside another component.</b></summary><br/>
+
+- Components can render other components, but you must never nest their definitions:
+```js
+export default function Gallery() {
+  function Profile() {
+    // ...
+  }
+  // ...
+}
+```
+- The snippet above is very slow and causes bugs. Instead, define every component at the top level
+
+    <div align='right'>
+        <a href="https://react.dev/learn/your-first-component#nesting-and-organizing-components">
+            <sup><b>React Docs ❱❱❱</b></sup>
+        </a>
+    </div>
+</details><hr/>
+
+<details><summary><b>When a child component needs some data from a parent, pass it by props instead of nesting definitions.</b></summary><br/>
+
+-  
+    <div align='right'>
+        <a href="https://react.dev/learn/passing-props-to-a-component">
+            <sup><b>React Docs ❱❱❱</b></sup>
+        </a>
+    </div>
+</details><hr/>
