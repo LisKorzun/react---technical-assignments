@@ -43,7 +43,10 @@ export default function Gallery() {
   // ...
 }
 ```
-- The snippet above is very slow and causes bugs. Instead, define every component at the top level
+- The snippet above is very slow and causes bugs. Instead, define every component at the top level.
+- Components are regular JavaScript functions, so you can keep multiple components in the same file. 
+This is convenient when components are relatively small or tightly related to each other. 
+If this file gets crowded, you can always move it to a separate file.
 
     <div align='right'>
         <a href="https://react.dev/learn/your-first-component#nesting-and-organizing-components">
