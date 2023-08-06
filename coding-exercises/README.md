@@ -51,6 +51,33 @@ Return statements of React components can be written all on one line or must be 
 <div align='right'><a href="#top"><sup><b>🔝 back to top 🔝</b></sup></a></div>
 <hr/>
 
+### EXERCISE 2𝕓
+![][Basic]
+
+How to import the following component considering that this component lives in a file, named `Avatar.jsx`?
+
+```js
+export default function Avatar() {
+    return <img src="https://i.imgur.com/jA8hHMpm.jpg" alt="Katsuko Saruhashi" />;
+}
+```
+
+<div>𝗢𝗣𝗧𝗜𝗢𝗡 𝟭 ➠ <code>import Avatar from './Avatar.jsx'</code> </div>
+<div>𝗢𝗣𝗧𝗜𝗢𝗡 𝟮 ➠ <code>import Component from './Avatar'</code> </div>
+<div>𝗢𝗣𝗧𝗜𝗢𝗡 𝟯 ➠ <code>import App from './Avatar'</code></div>
+<div>𝗢𝗣𝗧𝗜𝗢𝗡 𝟰 ➠ Any of the solutions above.</div>
+<div>𝗢𝗣𝗧𝗜𝗢𝗡 𝟱 ➠ There is no appropriate solution.</div>
+<br />
+<details><summary>𝗔𝗡𝗦𝗪𝗘𝗥</summary>
+
+##### 𝗢𝗣𝗧𝗜𝗢𝗡 𝟰
+When you write a `default` import, you can put `any name` you want after import.
+Either './Button.js' or './Button' will work with React, though the former is closer to how native ES Modules work.
+</details>
+<br/>
+<div align='right'><a href="#top"><sup><b>🔝 back to top 🔝</b></sup></a></div>
+<hr/>
+
 ## INTERMEDIATE REACT CODING EXERCISES
 ### EXERCISE 2𝕚
 ![][Intermediate] [![][useEffect Badge]][useEffect Link]
