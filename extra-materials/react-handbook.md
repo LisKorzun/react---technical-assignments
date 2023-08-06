@@ -173,5 +173,92 @@ How you export your component dictates how you must import it. You will get an e
 </div>
 </details><hr/>
 
+<details><summary><b>What JSX is</b></summary><br/>
+
+JSX is a syntax extension for JavaScript that lets you write HTML-like markup inside a JavaScript file.
+
+Each React component is a JavaScript function that may contain some markup that React renders into the browser. 
+React components use a syntax extension called JSX to represent that markup. 
+JSX looks a lot like HTML, but it is a bit stricter and can display dynamic information.
+
+**⛓ JSX and React are two separate things. They’re often used together, but you can use them independently of each other. 
+JSX is a syntax extension, while React is a JavaScript library.**
+
+```js
+function App() {
+  return <h1 className="greeting">Hello World</h1>;
+}
+```
+
+Browsers don’t understand JSX out of the box, so most React users rely on a compiler like Babel or TypeScript [to transform JSX code into regular JavaScript](https://legacy.reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html#whats-a-jsx-transform).
+
+This is what the modern JSX transform compiles it to:
+
+```js
+// Inserted by a compiler (don't import it yourself!)
+import {jsx as _jsx} from 'react/jsx-runtime';
+
+function App() {
+  return _jsx('h1', { children: 'Hello world', className: 'greeting' });
+}
+```
+
+If you don’t like JSX or can’t use it in your project, you can use `createElement` [as an alternative](https://react.dev/reference/react/createElement).
+
+```js
+import { createElement } from 'react';
+
+function Greeting({ name }) {
+  return createElement(
+    'h1',
+    { className: 'greeting' },
+    'Hello world'
+  );
+}
+```
+<div align='right'>
+  <a href="https://react.dev/learn/writing-markup-with-jsx">
+    <sup><b>React Docs ❱❱❱</b></sup>
+  </a>
+</div>
+</details><hr/>
+
+<details><summary><b>The Rules of JSX</b></summary><br/>
+
+#### 1. Return a single root element
+To return multiple elements from a component, wrap them with a single parent tag `<div>` or `<>`.
+This empty tag is called a [Fragment](https://react.dev/reference/react/Fragment).
+#### 2. Close all the tags
+JSX requires tags to be explicitly closed: self-closing tags like <img> must become `<img />`, and wrapping tags like `<li> oranges` must be written as `<li>oranges</li>`.
+#### 3. camelCase all most of the things
+JSX turns into JavaScript and attributes written in JSX become keys of JavaScript objects. 
+In your own components, you will often want to read those attributes into variables. 
+But JavaScript has limitations on variable names. For example, their names can’t contain dashes or be reserved words like `class`.
+This is why, in React, many HTML and SVG attributes are written in camelCase. See [the list of DOM component props](https://react.dev/reference/react-dom/components/common#common-props).
+<div align='right'>
+  <a href="https://react.dev/learn/writing-markup-with-jsx#the-rules-of-jsx">
+    <sup><b>React Docs ❱❱❱</b></sup>
+  </a>
+</div>
+</details><hr/>
+
+&nbsp;&nbsp;&nbsp;&nbsp;![][Recap]
+- React components group rendering logic together with markup because they are related.
+- JSX is similar to HTML, with a few differences. You can use a [converter](https://transform.tools/html-to-jsx) if you need to.
+- JSX is stricter and has a few more rules than HTML.
+- Error messages will often point you in the right direction to fixing your markup.
+- JSX and React are two separate things. JSX is a syntax extension, while React is a JavaScript library.
+
+
+<hr/>
+<details><summary><b></b></summary><br/>
+
+<div align='right'>
+  <a href="">
+    <sup><b>React Docs ❱❱❱</b></sup>
+  </a>
+</div>
+</details><hr/>
+
 
 [Recap]: https://img.shields.io/badge/recap-149eca.svg?&logo=react&logoColor=white&style=for-the-badge
