@@ -136,9 +136,9 @@ The magic of components lies in their reusability: you can create components tha
 But as you nest more and more components, it often makes sense to start splitting them into different files.
 
 You can move a component in three steps:
-- Make a new JS file to put the components in.
-- Export your function component from that file (using either [default or named](https://react.dev/learn/importing-and-exporting-components#default-vs-named-exports) exports).
-- Import it in the file where you’ll use the component (using the corresponding technique for importing default or named exports).
+1. **Make** a new JS file to put the components in.
+2. **Export** your function component from that file (using either [default or named](https://react.dev/learn/importing-and-exporting-components#default-vs-named-exports) exports).
+3. **Import** it in the file where you’ll use the component (using the corresponding technique for importing default or named exports).
 <div align='right'>
   <a href="https://react.dev/learn/importing-and-exporting-components#exporting-and-importing-a-component">
     <sup><b>React Docs ❱❱❱</b></sup>
@@ -160,9 +160,12 @@ How you export your component dictates how you must import it. You will get an e
 - Default
   - `export default function Button() {}`
   - `import Button from './Button.js';`
+    - When you write a `default` import, you can put `any name` you want after import.
 - Named
   - `export function Button() {}`
   - `import { Button } from './Button.js';`
+    - In contrast, with named imports, the name has to match on both sides.
+    - Either './Button.js' or './Button' will work with React, though the former is closer to how native ES Modules work.
 <div align='right'>
   <a href="https://react.dev/learn/importing-and-exporting-components#default-vs-named-exports">
     <sup><b>React Docs ❱❱❱</b></sup>
