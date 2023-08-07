@@ -191,7 +191,6 @@ function App() {
 ```
 
 Browsers don’t understand JSX out of the box, so most React users rely on a compiler like Babel or TypeScript [to transform JSX code into regular JavaScript](https://legacy.reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html#whats-a-jsx-transform).
-
 This is what the modern JSX transform compiles it to:
 
 ```js
@@ -223,10 +222,10 @@ function Greeting({ name }) {
 </div>
 </details><hr/>
 
-<details><summary><b>The Rules of JSX</b></summary><br/>
+<details><summary><b>The Rules of JSX</b></summary>
 
 #### 1. Return a single root element
-To return multiple elements from a component, wrap them with a single parent tag `<div>` or `<>`.
+To return multiple elements from a component, wrap them with a single parent tag e.g. `<div>` or `<>`.
 This empty tag is called a [Fragment](https://react.dev/reference/react/Fragment).
 #### 2. Close all the tags
 JSX requires tags to be explicitly closed: self-closing tags like <img> must become `<img />`, and wrapping tags like `<li> oranges` must be written as `<li>oranges</li>`.

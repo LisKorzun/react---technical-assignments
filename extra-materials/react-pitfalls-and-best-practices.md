@@ -77,11 +77,46 @@ If this file gets crowded, you can always move it to a separate file.
 </div>
 </details><hr/>
 
+<details><summary><b>JSX: Return a single root element from a component</b></summary><br/>
+
+- To return multiple elements from a component, wrap them with a single parent tag e.g. `<div>` or `<>`.
+  This empty tag is called a [Fragment](https://react.dev/reference/react/Fragment).
+<div align='right'>
+    <a href="https://react.dev/learn/writing-markup-with-jsx#1-return-a-single-root-element">
+        <sup><b>React Docs ❱❱❱</b></sup>
+    </a>
+</div>
+</details><hr/>
+
+<details><summary><b>JSX: Close all the tags</b></summary><br/>
+
+- JSX requires tags to be explicitly closed: self-closing tags like <img> must become `<img />`, and wrapping tags like `<li> oranges` must be written as `<li>oranges</li>`.
+<div align='right'>
+    <a href="https://react.dev/learn/writing-markup-with-jsx#2-close-all-the-tags">
+        <sup><b>React Docs ❱❱❱</b></sup>
+    </a>
+</div>
+</details><hr/>
+
+<details><summary><b>JSX: Use camelCase for HTML and SVG attributes (standard DOM props).</b></summary><br/>
+
+- JSX turns into JavaScript and attributes written in JSX become keys of JavaScript objects.
+  In your own components, you will often want to read those attributes into variables.
+  But JavaScript has limitations on variable names. For example, their names can’t contain dashes or be reserved words like `class`.
+  This is why, in React, many HTML and SVG attributes are written in camelCase. See [the list of DOM component props](https://react.dev/reference/react-dom/components/common#common-props).
+- For historical reasons, `aria-*` and `data-*` attributes are written as in HTML with dashes.
+<div align='right'>
+    <a href="">
+        <sup><b>React Docs ❱❱❱</b></sup>
+    </a>
+</div>
+</details><hr/>
+
 <details><summary><b></b></summary><br/>
 
 -
   <div align='right'>
-      <a href="https://react.dev/learn/passing-props-to-a-component">
+      <a href="">
           <sup><b>React Docs ❱❱❱</b></sup>
       </a>
   </div>
