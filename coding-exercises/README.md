@@ -13,7 +13,7 @@
 <br />
 <div align="center">
     <a href="#basic-react-coding-exercises">
-        <img alt="Releases" src="https://img.shields.io/badge/BASIC%20EXERCISES-0-white?&logo=codeforces&logoColor=white&labelColor=DB6BAD&style=for-the-badge" />
+        <img alt="Releases" src="https://img.shields.io/badge/BASIC%20EXERCISES-2-white?&logo=codeforces&logoColor=white&labelColor=DB6BAD&style=for-the-badge" />
     </a>
     <a href="#intermediate-react-coding-exercises">
         <img alt="Releases" src="https://img.shields.io/badge/INTERMEDIATE%20EXERCISES-1-white?&logo=codeforces&logoColor=white&labelColor=6B75DB&style=for-the-badge" />
