@@ -275,8 +275,12 @@ This explains why you also can’t return two JSX tags without wrapping them int
     Any JavaScript expression will work between curly braces, including function calls.
 
 **3. Curly braces work inside the JSX tag content or immediately after `=` in attributes.**
-  - As text directly inside a JSX tag: `<h1>{name}'s To Do List</h1>` works, but `<{tag}>Gregorio Y. Zara's To Do List</{tag}>` will not.
-  - As attributes immediately following the `=` sign: `src={avatar}` will read the avatar variable, but `src="{avatar}"` will pass the string `"{avatar}"`.
+  - As text directly inside a JSX tag: 
+    - ✅ `<h1>{name}'s To Do List</h1>` works, 
+    - 🔴 but `<{tag}>Gregorio Y. Zara's To Do List</{tag}>` will not.
+  - As attributes immediately following the `=` sign: 
+    - ✅ `src={avatar}` will read the avatar variable, 
+    - 🔴 but `src="{avatar}"` will pass the string `"{avatar}"`.
 
 **4. `{{` and `}}` is not special syntax: it’s a JavaScript object tucked inside JSX curly braces.**
   - The next time you see `{{` and `}}` in JSX, know that it’s nothing more than an object inside the JSX curlies!
