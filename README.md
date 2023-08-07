@@ -6,18 +6,18 @@
     </a>
     <h1>𝚃𝙴𝙲𝙷𝙽𝙸𝙲𝙰𝙻 𝙰𝚂𝚂𝙸𝙶𝙽𝙼𝙴𝙽𝚃𝚂</h1>
     <sup><b>You can evaluate yourself in the most important concepts in React,<br /> 
-    as well as your skill and familiarity with the most-used advanced concepts.</b></sup>
+    as well as your skill and familiarity with the most-used advanced concepts. See also:</b></sup>
     <br />
     <a href="https://github.com/LisKorzun/react---technical-assignments/blob/main/extra-materials/react-handbook.md">
-        <sup><b>React Handbook ❱❱❱</b></sup>
+        <sup><b>React Handbook</b></sup>
     </a>
-    <br/>
+    <sup> ❖ </sup>
     <a href="https://github.com/LisKorzun/react---technical-assignments/blob/main/extra-materials/react-pitfalls-and-best-practices.md">
-        <sup><b>React Pitfalls & Best Practices ❱❱❱</b></sup>
+        <sup><b>React Pitfalls & Best Practices</b></sup>
     </a>
-    <br/>
+    <sup> ❖ </sup>
     <a href="https://github.com/LisKorzun/react---technical-assignments/blob/main/extra-materials/react-evolution.md">
-        <sup><b>React Evolution ❱❱❱</b></sup>
+        <sup><b>React Evolution</b></sup>
     </a>
     
 </div>

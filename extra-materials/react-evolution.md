@@ -8,8 +8,9 @@
         <img alt="react logo" src="/extra-materials/images/react-logo.png" height="150"/>
     </a>
     <h1>𝙴𝚅𝙾𝙻𝚄𝚃𝙸𝙾𝙽</h1>
-    <a href="https://github.com/facebook/react/releases"><sup><b>React Releases ❱❱❱</b></sup></a>
-    <a href="https://github.com/reactjs/rfcs"><sup><b>Experimental Features ❱❱❱</b></sup></a>
+    <a href="https://github.com/facebook/react/releases"><sup><b>React Releases</b></sup></a>
+    <sup> ❖ </sup>
+    <a href="https://github.com/reactjs/rfcs"><sup><b>Experimental Features</b></sup></a>
     <br />
     <br />
 </div>
