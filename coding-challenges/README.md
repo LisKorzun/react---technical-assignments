@@ -43,7 +43,7 @@ export default function Congratulations() {
 }
 ```
 
-<div align="right"><a href="/blob/main/coding-challenges/basic/challenge-001/src/App.jsx"><sup><b>See solution</b></sup></a></div>
+<div align="right"><a href="/coding-challenges/basic/challenge-001/src/App.jsx"><sup><b>See solution</b></sup></a></div>
 </details>
 
 ## INTERMEDIATE REACT CODING CHALLENGES
