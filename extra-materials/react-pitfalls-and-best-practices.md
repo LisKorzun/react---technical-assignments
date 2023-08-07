@@ -112,13 +112,15 @@ If this file gets crowded, you can always move it to a separate file.
 </div>
 </details><hr/>
 
-<details><summary><b>JSX: Enforce the consistent use of either double or single quotes in JSX attributes.</b></summary>
+<details><summary><b>JSX: Enforce the consistent use of either double or single quotes in JSX attributes.</b></summary><br/>
 
 - JSX attribute values can contain string literals, which are delimited with single or double quotes.
 - Unlike string literals in JavaScript, string literals within JSX attributes can’t contain escaped quotes.
 - You can use [ESLint rule](https://eslint.org/docs/latest/rules/jsx-quotes) to enforce the consistent use of either double or single quotes in JSX attributes.
-  - **"prefer-double"** (default) enforces the use of double quotes for all JSX attribute values that don’t contain a double quote: `jsx-quotes: ["error", "prefer-double"]`
-  - **"prefer-single"** enforces the use of single quotes for all JSX attribute values that don’t contain a single quote: `jsx-quotes: ["error", "prefer-single"]`
+  - **"prefer-double"** (default) enforces the use of double quotes for all JSX attribute values that don’t contain a double quote: 
+    - `jsx-quotes: ["error", "prefer-double"]`
+  - **"prefer-single"** enforces the use of single quotes for all JSX attribute values that don’t contain a single quote: 
+    - `jsx-quotes: ["error", "prefer-single"]`
   
   <div align='right'>
       <a href="https://react.dev/learn/javascript-in-jsx-with-curly-braces#passing-strings-with-quotes">
