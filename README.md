@@ -8,10 +8,18 @@
     <sup><b>You can evaluate yourself in the most important concepts in React,<br /> 
     as well as your skill and familiarity with the most-used advanced concepts.</b></sup>
     <br />
-    <br />
-    <a href="https://github.com/LisKorzun/react---technical-assignments/blob/main/extra-materials/why-should-i-engage-in-programming-challenges.md">
-        <sup><b>Why should I engage in programming challenges?</b></sup>
+    <a href="https://github.com/LisKorzun/react---technical-assignments/blob/main/extra-materials/react-handbook.md">
+        <sup><b>React Handbook ❱❱❱</b></sup>
     </a>
+    <br/>
+    <a href="https://github.com/LisKorzun/react---technical-assignments/blob/main/extra-materials/react-pitfalls-and-best-practices.md">
+        <sup><b>React Pitfalls & Best Practices ❱❱❱</b></sup>
+    </a>
+    <br/>
+    <a href="https://github.com/LisKorzun/react---technical-assignments/blob/main/extra-materials/react-evolution.md">
+        <sup><b>React Evolution ❱❱❱</b></sup>
+    </a>
+    
 </div>
 <br />
 <br/>
@@ -49,21 +57,14 @@
 <br />
 <br />
 <br />
-<hr />
 
 <div align="center">
-    <h3>𝙴𝚡𝚝𝚛𝚊 𝙼𝚊𝚝𝚎𝚛𝚒𝚊𝚕𝚜</h3>
-    <a href="https://github.com/LisKorzun/react---technical-assignments/blob/main/extra-materials/react-handbook.md">
-        <sup><b>React Handbook ❱❱❱</b></sup>
-    </a>
-    <br/>
-    <a href="https://github.com/LisKorzun/react---technical-assignments/blob/main/extra-materials/react-pitfalls-and-best-practices.md">
-        <sup><b>React Pitfalls & Best Practices ❱❱❱</b></sup>
-    </a>
-    <br/>
-    <br/>
     <div>〰〰〰〰〰〰〰〰〰〰</div>
     <h3>𝙰𝚍𝚍𝚒𝚝𝚒𝚘𝚗𝚊𝚕 𝚁𝚎𝚜𝚘𝚞𝚛𝚌𝚎𝚜 𝚃𝚘 𝙷𝚎𝚕𝚙 𝚈𝚘𝚞 𝙿𝚛𝚎𝚙𝚊𝚛𝚎</h3>
+    <a href="https://taikai.network/blog/how-to-prepare-for-coding-challenges">
+        <sup><b>Why should I engage in programming challenges?</b></sup>
+    </a>
+    <br/>
     <a href="https://react.dev/reference/react">
         <sup><b>Built-in React hooks api reference</b></sup>
     </a>
