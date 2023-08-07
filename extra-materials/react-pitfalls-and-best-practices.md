@@ -66,7 +66,7 @@ If this file gets crowded, you can always move it to a separate file.
 </div>
 </details><hr/>
 
-<details><summary><b>Stick to one style of exporting components</b></summary><br/>
+<details><summary><b>Stick to one style of exporting components.</b></summary><br/>
 
 - People often use default exports if the file exports only one component, and use named exports if it exports multiple components and values.
 - To reduce the potential confusion between default and named exports, some teams choose to only stick to one style (default or named), or avoid mixing them in a single file. Do what works best for you!
@@ -77,7 +77,7 @@ If this file gets crowded, you can always move it to a separate file.
 </div>
 </details><hr/>
 
-<details><summary><b>JSX: Return a single root element from a component</b></summary><br/>
+<details><summary><b>JSX: Return a single root element from a component.</b></summary><br/>
 
 - To return multiple elements from a component, wrap them with a single parent tag e.g. `<div>` or `<>`.
   This empty tag is called a [Fragment](https://react.dev/reference/react/Fragment).
@@ -88,7 +88,7 @@ If this file gets crowded, you can always move it to a separate file.
 </div>
 </details><hr/>
 
-<details><summary><b>JSX: Close all the tags</b></summary><br/>
+<details><summary><b>JSX: Close all the tags.</b></summary><br/>
 
 - JSX requires tags to be explicitly closed: self-closing tags like <img> must become `<img />`, and wrapping tags like `<li> oranges` must be written as `<li>oranges</li>`.
 <div align='right'>

@@ -21,7 +21,7 @@
 ## 💠 17.0.0 
 <sup>October 20, 2020</sup> <a href="https://github.com/facebook/react/releases/tag/v17.0.0"><sup><b>Changelog ❱❱❱</b></sup></a>
 
-<details><summary><b>React added support for the new version of JSX transform</b></summary><br/>
+<details><summary><b>React added support for the new version of JSX transform.</b></summary><br/>
 
 Browsers don’t understand JSX out of the box, so most React users rely on a compiler like Babel or TypeScript to transform JSX code into regular JavaScript.
 #### 𝗕𝗘𝗙𝗢𝗥𝗘
