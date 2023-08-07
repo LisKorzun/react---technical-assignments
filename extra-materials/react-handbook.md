@@ -241,6 +241,18 @@ This is why, in React, many HTML and SVG attributes are written in camelCase. Se
 </div>
 </details><hr/>
 
+<details><summary><b>Why do multiple JSX tags need to be wrapped?</b></summary><br/>
+
+JSX looks like HTML, but under the hood it is transformed into plain JavaScript objects. 
+You can’t return two objects from a function without wrapping them into an array. 
+This explains why you also can’t return two JSX tags without wrapping them into another tag or a Fragment.
+<div align='right'>
+  <a href="https://react.dev/learn/writing-markup-with-jsx#why-do-multiple-jsx-tags-need-to-be-wrapped">
+    <sup><b>React Docs ❱❱❱</b></sup>
+  </a>
+</div>
+</details><hr/>
+
 &nbsp;&nbsp;&nbsp;&nbsp;![][Recap]
 - React components group rendering logic together with markup because they are related.
 - JSX is similar to HTML, with a few differences. You can use a [converter](https://transform.tools/html-to-jsx) if you need to.
@@ -250,6 +262,32 @@ This is why, in React, many HTML and SVG attributes are written in camelCase. Se
 
 
 <hr/>
+
+<details><summary><b>JavaScript in JSX with Curly Braces</b></summary><br/>
+
+**1. JSX attributes inside quotes are passed as strings.** 
+  - When you want to pass a string attribute to JSX, you put it in **single or double quotes**.
+  - Unlike string literals in JavaScript, string literals within JSX attributes can’t contain escaped quotes.
+
+**2. Curly braces let you bring JavaScript logic and variables into your markup.**
+  - Sometimes you will want to add a little JavaScript logic or reference a dynamic property inside that markup.
+    In this situation, you can **use curly braces** in your JSX to open a window to JavaScript.
+    Any JavaScript expression will work between curly braces, including function calls.
+
+**3. Curly braces work inside the JSX tag content or immediately after `=` in attributes.**
+  - As text directly inside a JSX tag: `<h1>{name}'s To Do List</h1>` works, but `<{tag}>Gregorio Y. Zara's To Do List</{tag}>` will not.
+  - As attributes immediately following the `=` sign: `src={avatar}` will read the avatar variable, but `src="{avatar}"` will pass the string `"{avatar}"`.
+
+**4. `{{` and `}}` is not special syntax: it’s a JavaScript object tucked inside JSX curly braces.**
+  - The next time you see `{{` and `}}` in JSX, know that it’s nothing more than an object inside the JSX curlies!
+  - Inline style properties are written in camelCase. For example, HTML `<ul style="background-color: black">` would be written as `<ul style={{ backgroundColor: 'black' }}>`  in your component.
+<div align='right'>
+  <a href="https://react.dev/learn/javascript-in-jsx-with-curly-braces">
+    <sup><b>React Docs ❱❱❱</b></sup>
+  </a>
+</div>
+</details><hr/>
+
 <details><summary><b></b></summary><br/>
 
 <div align='right'>
