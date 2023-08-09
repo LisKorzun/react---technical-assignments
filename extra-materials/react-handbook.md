@@ -253,7 +253,7 @@ This explains why you also can’t return two JSX tags without wrapping them int
 </div>
 </details><hr/>
 
-<details><summary><b>JavaScript in JSX with Curly Braces</b></summary><br/>
+<details><summary><b>JavaScript in JSX with curly braces</b></summary><br/>
 
 **1. JSX attributes inside quotes are passed as strings.** 
   - When you want to pass a string attribute to JSX, you put it in **single or double quotes**.

@@ -12,7 +12,7 @@
 <br />
 <br />
 
-<details><summary><b>React components names must start with a capital letter.</b></summary><br/>
+<details><summary><b><sup> 💥 </sup> React components names must start with a capital letter.</b></summary><br/>
 
 - React components are regular JavaScript functions, but their names must start with a capital letter or they won’t work!
     <div align='right'>
@@ -22,7 +22,7 @@
     </div>
 </details><hr/>
 
-<details><summary><b>Return statements of React components can be written all on one line or must be wrapped in a pair of parentheses.</b></summary><br/>
+<details><summary><b><sup> 💥 </sup> Return statements of React components can be written all on one line or must be wrapped in a pair of parentheses.</b></summary><br/>
 
 - Without parentheses, any code on the lines after return will be ignored!
     <div align='right'>
@@ -32,7 +32,7 @@
     </div>
 </details><hr/>
 
-<details><summary><b>Never define a component inside another component.</b></summary><br/>
+<details><summary><b><sup> 💥 </sup> Never define a component inside another component.</b></summary><br/>
 
 - Components can render other components, but you must never nest their definitions:
 ```js
@@ -56,7 +56,7 @@ If this file gets crowded, you can always move it to a separate file.
     </div>
 </details><hr/>
 
-<details><summary><b>Always give meaningful names to your component functions and the files that contain them.</b></summary><br/>
+<details><summary><b><sup> 💎</sup> Always give meaningful names to your component functions and the files that contain them.</b></summary><br/>
 
 - Components without names, like `export default () => {}`, are discouraged because they make debugging harder.
 <div align='right'>
@@ -66,7 +66,7 @@ If this file gets crowded, you can always move it to a separate file.
 </div>
 </details><hr/>
 
-<details><summary><b>Stick to one style of exporting components.</b></summary><br/>
+<details><summary><b><sup> 💎</sup> Stick to one style of exporting components.</b></summary><br/>
 
 - People often use default exports if the file exports only one component, and use named exports if it exports multiple components and values.
 - To reduce the potential confusion between default and named exports, some teams choose to only stick to one style (default or named), or avoid mixing them in a single file. Do what works best for you!
@@ -77,7 +77,7 @@ If this file gets crowded, you can always move it to a separate file.
 </div>
 </details><hr/>
 
-<details><summary><b>JSX: Return a single root element from a component.</b></summary><br/>
+<details><summary><b><sup> 💎</sup> JSX: Return a single root element from a component.</b></summary><br/>
 
 - To return multiple elements from a component, wrap them with a single parent tag e.g. `<div>` or `<>`.
   This empty tag is called a [Fragment](https://react.dev/reference/react/Fragment).
@@ -88,7 +88,7 @@ If this file gets crowded, you can always move it to a separate file.
 </div>
 </details><hr/>
 
-<details><summary><b>JSX: Close all the tags.</b></summary><br/>
+<details><summary><b><sup> 💎</sup> JSX: Close all the tags.</b></summary><br/>
 
 - JSX requires tags to be explicitly closed: self-closing tags like <img> must become `<img />`, and wrapping tags like `<li> oranges` must be written as `<li>oranges</li>`.
 <div align='right'>
@@ -98,15 +98,15 @@ If this file gets crowded, you can always move it to a separate file.
 </div>
 </details><hr/>
 
-<details><summary><b>JSX: Use camelCase attributes written in JSX.</b></summary><br/>
+<details><summary><b><sup> 💎</sup> JSX: Use camelCase attributes written in JSX.</b></summary><br/>
 
 - JSX turns into JavaScript and attributes written in JSX become keys of JavaScript objects.
   In your own components, you will often want to read those attributes into variables.
   But JavaScript has limitations on variable names. For example, their names can’t contain dashes or be reserved words like `class`.
   This is why, in React, many HTML and SVG attributes are written in camelCase. See [the list of DOM component props](https://react.dev/reference/react-dom/components/common#common-props).
-- For historical reasons, `aria-*` and `data-*` attributes are written as in HTML with dashes.
+- <sup> 💥 </sup>For historical reasons, <code>aria-*</code> and <code>data-*</code> attributes are written as in HTML with dashes.
 <div align='right'>
-    <a href="">
+    <a href="https://react.dev/learn/writing-markup-with-jsx#3-camelcase-salls-most-of-the-things">
         <sup><b>React Docs ❱❱❱</b></sup>
     </a>
 </div>
@@ -129,7 +129,7 @@ If this file gets crowded, you can always move it to a separate file.
   </div>
 </details><hr/>
 
-<details><summary><b><sup> 💥 </sup>Don’t try to “change props”, they are immutable. </b></summary><br/>
+<details><summary><b><sup> 💥 </sup> Don’t try to “change props”, they are immutable. </b></summary><br/>
 
 - When you need to respond to the user input (like changing the selected color), you will need to “set state”.
   <div align='right'>
@@ -149,7 +149,7 @@ If this file gets crowded, you can always move it to a separate file.
   </div>
 </details><hr/>
 
-<details><summary><b><sup> 💥 </sup>Don’t put numbers on the left side of <code>&&</code>.</b></summary><br/>
+<details><summary><b><sup> 💥 </sup> Don’t put numbers on the left side of <code>&&</code>.</b></summary><br/>
 
 - To test the condition, JavaScript converts the left side to a boolean automatically. However, if the left side is 0, then the whole expression gets that value (`0`), and React will happily render `0` rather than nothing.
 - For example, a common mistake is to write code like `messageCount && <p>New messages</p>`. It’s easy to assume that it renders nothing when `messageCount` is `0`, but it really renders the `0` itself!
