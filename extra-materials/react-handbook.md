@@ -253,14 +253,6 @@ This explains why you also can’t return two JSX tags without wrapping them int
 </div>
 </details><hr/>
 
-&nbsp;&nbsp;&nbsp;&nbsp;![][Recap]
-- React components group rendering logic together with markup because they are related.
-- JSX is similar to HTML, with a few differences. You can use a [converter](https://transform.tools/html-to-jsx) if you need to.
-- JSX is stricter and has a few more rules than HTML.
-- Error messages will often point you in the right direction to fixing your markup.
-- JSX and React are two separate things. JSX is a syntax extension, while React is a JavaScript library.
-
-<hr/>
 <details><summary><b>JavaScript in JSX with Curly Braces</b></summary><br/>
 
 **1. JSX attributes inside quotes are passed as strings.** 
@@ -290,6 +282,15 @@ This explains why you also can’t return two JSX tags without wrapping them int
 </div>
 </details><hr/>
 
+&nbsp;&nbsp;&nbsp;&nbsp;![][Recap]
+- React components group rendering logic together with markup because they are related.
+- JSX is similar to HTML, with a few differences. You can use a [converter](https://transform.tools/html-to-jsx) if you need to.
+- JSX is stricter and has a few more rules than HTML.
+- Error messages will often point you in the right direction to fixing your markup.
+- Curly braces let you bring JavaScript logic and variables into your markup.
+- JSX and React are two separate things. JSX is a syntax extension, while React is a JavaScript library.
+
+<hr/>
 <details><summary><b>What are props?</b></summary><br/>
 
 - **Props** are the information that you pass to a JSX tag. 
