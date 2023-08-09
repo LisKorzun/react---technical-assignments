@@ -7,7 +7,7 @@
     <a href="https://react.dev/">
         <img alt="react logo" src="/extra-materials/images/react-logo.png" height="150"/>
     </a>
-    <h1>𝙿𝙸𝚃𝙵𝙰𝙻𝙻𝚂 & 𝙱𝙴𝚂𝚃 𝙿𝚁𝙰𝙲𝚃𝙸𝙲𝙴𝚂</h1>
+    <h1>𝙿𝙸𝚃𝙵𝙰𝙻𝙻𝚂<sup>💥 </sup> & 𝙱𝙴𝚂𝚃 𝙿𝚁𝙰𝙲𝚃𝙸𝙲𝙴𝚂<sup>💎 </sup></h1>
 </div>
 <br />
 <br />
@@ -112,7 +112,7 @@ If this file gets crowded, you can always move it to a separate file.
 </div>
 </details><hr/>
 
-<details><summary><b>JSX: Enforce the consistent use of either double or single quotes in JSX attributes.</b></summary><br/>
+<details><summary><b><sup> 💎</sup> JSX: Enforce the consistent use of either double or single quotes in JSX attributes.</b></summary><br/>
 
 - JSX attribute values can contain string literals, which are delimited with single or double quotes.
 - Unlike string literals in JavaScript, string literals within JSX attributes can’t contain escaped quotes.
@@ -129,7 +129,7 @@ If this file gets crowded, you can always move it to a separate file.
   </div>
 </details><hr/>
 
-<details><summary><b>Don’t try to “change props”, they are immutable. </b></summary><br/>
+<details><summary><b><sup> 💥 </sup>Don’t try to “change props”, they are immutable. </b></summary><br/>
 
 - When you need to respond to the user input (like changing the selected color), you will need to “set state”.
   <div align='right'>
@@ -137,6 +137,28 @@ If this file gets crowded, you can always move it to a separate file.
           <sup><b>React Docs ❱❱❱</b></sup>
       </a>
   </div>
+</details><hr/>
+
+<details><summary><b><sup> 💎 </sup>Consider extracting child components to clean things up,  if your components get messy with too much nested conditional markup.</b></summary><br/>
+
+- In React, markup is a part of your code, so you can use tools like variables and functions to tidy up complex expressions.
+  <div align='right'>
+      <a href="https://react.dev/learn/conditional-rendering#conditional-ternary-operator--">
+          <sup><b>React Docs ❱❱❱</b></sup>
+      </a>
+  </div>
+</details><hr/>
+
+<details><summary><b><sup> 💥 </sup>Don’t put numbers on the left side of <code>&&</code>.</b></summary><br/>
+
+- To test the condition, JavaScript converts the left side to a boolean automatically. However, if the left side is 0, then the whole expression gets that value (`0`), and React will happily render `0` rather than nothing.
+- For example, a common mistake is to write code like `messageCount && <p>New messages</p>`. It’s easy to assume that it renders nothing when `messageCount` is `0`, but it really renders the `0` itself!
+- To fix it, make the left side a boolean: `messageCount > 0 && <p>New messages</p>`.
+<div align='right'>
+    <a href="https://react.dev/learn/conditional-rendering#logical-and-operator-">
+        <sup><b>React Docs ❱❱❱</b></sup>
+    </a>
+</div>
 </details><hr/>
 
 <details><summary><b></b></summary><br/>

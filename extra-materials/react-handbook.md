@@ -424,6 +424,94 @@ Its old props will then be cast aside, and eventually the JavaScript engine will
 - You can’t change props. When you need interactivity, you’ll need to set state.
 
 <hr/>
+<details><summary><b>Conditional Rendering</b></summary><br/>
+
+In React, control flow (like conditions) is handled by JavaScript.
+
+- **You can return a JSX expression conditionally with an `if` statement.**
+
+```js
+function Item({ name, isPacked }) {
+    if (isPacked) {
+        return <li className="item">{name} ✔</li>;
+    }
+    return <li className="item">{name}</li>;
+}
+
+```
+
+- **You can use a compact syntax for writing a conditional expression — the conditional operator or “ternary operator”.**
+  - In JSX, `{cond ? <A /> : <B />}` means “_if `cond`, render `<A />`, otherwise `<B />`_”.
+
+```js
+function Item({ name, isPacked }) {
+    return (
+        <li className="item">
+            {isPacked ? name + ' ✔' : name}
+        </li>
+    );
+}
+```
+
+- **You can render some JSX when the condition is `true`, or render nothing otherwise using logical `AND` operator (`&&`) .**
+  - In JSX, `{cond && <A />}` means “_if `cond`, render `<A />`, otherwise nothing_”.
+  - Don’t put numbers on the left side of `&&.` if the left side is 0, then the whole expression gets that value (0), and React will happily render `0` rather than nothing.
+
+```js
+function Item({ name, isPacked }) {
+    return (
+        <li className="item">
+            {name} {isPacked && '✔'}
+        </li>
+    );
+}
+```
+
+- **You can conditionally save some JSX to a variable and then include it inside other JSX by using the curly braces.**
+
+```js
+function Item({ name, isPacked }) {
+  let itemContent = name;
+  if (isPacked) {
+    itemContent = name + " ✔";
+  }
+  return (
+    <li className="item">
+      {itemContent}
+    </li>
+  );
+}
+
+// this works not only for text, but for arbitrary JSX too:
+function Item2({ name, isPacked }) {
+    let itemContent = name;
+    if (isPacked) {
+        itemContent = (
+            <del>
+                {name + " ✔"}
+            </del>
+        );
+    }
+    return (
+        <li className="item">
+            {itemContent}
+        </li>
+    );
+}
+```
+
+<div align='right'>
+  <a href="https://react.dev/learn/conditional-rendering">
+    <sup><b>React Docs ❱❱❱</b></sup>
+  </a>
+</div>
+</details><hr/>
+
+&nbsp;&nbsp;&nbsp;&nbsp;![][Recap]
+- In React, you can conditionally render JSX using JavaScript syntax like `if` statements, `&&`, and `? :` operators.
+- The shortcuts are common, but you don’t have to use them if you prefer plain `if`.
+<hr/>
+
 <details><summary><b></b></summary><br/>
 
 <div align='right'>
