@@ -16,7 +16,7 @@
 <br />
 <br />
 
-<details><summary><b>What React is </b></summary><br/>
+<details><summary><b>What is React? </b></summary><br/>
     <p>React (aka React.js or ReactJS) is an open-source front-end JavaScript library 
     that is used for building composable user interfaces (UI), especially for single-page applications. 
     It is used for handling view layer for web and mobile apps based on components in a declarative approach. <br/>
@@ -24,7 +24,7 @@
     ✧ React was first deployed on Facebook's News Feed in 2011 and on Instagram in 2012. ✧</sub></div></p>
 </details><hr/>
 
-<details><summary><b>What a React component is</b></summary><br/>
+<details><summary><b>What is a React component?</b></summary><br/>
     <p>React applications are built from isolated pieces of UI called components. 
     A component is a piece of the UI (user interface) that has its own logic and appearance.  
     <b><u>A React component is a JavaScript function that returns markup.</u></b> 
@@ -111,7 +111,7 @@ and then use it in as many places and as many times as you like.**
   - They return JSX markup.
 
 <hr/>
-<details><summary><b>What a “root” component is</b></summary><br/>
+<details><summary><b>What is a “root” component?</b></summary><br/>
 
 Any React application begins at a “root” component. Usually,
 it is created automatically when you start a new project.
@@ -173,7 +173,7 @@ How you export your component dictates how you must import it. You will get an e
 </div>
 </details><hr/>
 
-<details><summary><b>What JSX is</b></summary><br/>
+<details><summary><b>What is JSX?</b></summary><br/>
 
 JSX is a syntax extension for JavaScript that lets you write HTML-like markup inside a JavaScript file.
 
@@ -260,9 +260,7 @@ This explains why you also can’t return two JSX tags without wrapping them int
 - Error messages will often point you in the right direction to fixing your markup.
 - JSX and React are two separate things. JSX is a syntax extension, while React is a JavaScript library.
 
-
 <hr/>
-
 <details><summary><b>JavaScript in JSX with Curly Braces</b></summary><br/>
 
 **1. JSX attributes inside quotes are passed as strings.** 
@@ -292,6 +290,139 @@ This explains why you also can’t return two JSX tags without wrapping them int
 </div>
 </details><hr/>
 
+<details><summary><b>What are props?</b></summary><br/>
+
+- **Props** are the information that you pass to a JSX tag. 
+- React components use `props` to communicate with each other.
+Every parent component can pass some information to its child components by giving them props. 
+- You can pass any JavaScript value through them, including `objects`, `arrays`, and `functions`.
+- Props let you think about parent and child components independently.
+<div align='right'>
+  <a href="https://react.dev/learn/passing-props-to-a-component">
+    <sup><b>React Docs ❱❱❱</b></sup>
+  </a>
+</div>
+</details><hr/>
+
+<details><summary><b>Passing props to a component</b></summary><br/>
+
+**1. To pass props, add them to the JSX, just like you would with HTML attributes.**
+
+```js
+export default function Profile() {
+  return (
+    <Avatar
+      person={{ name: 'Lin Lanying', imageId: '1bX5QH6' }}
+      size={100}
+    />
+  );
+}
+```
+**2. To read props, use the `function Avatar({ person, size })` destructuring syntax.**
+
+- "Props" serve the same role as arguments serve for functions. 
+In fact, props are the only argument to your component! 
+React component functions accept a single argument - a `props` object.
+
+```js
+function Avatar(props) {
+  let person = props.person;
+  let size = props.size;
+  // ...
+}
+```
+- Usually you don’t need the whole props object itself, so you destructure it into individual props.
+This syntax is called “destructuring”.
+
+```js
+function Avatar({ person, size }) {
+  // ...
+}
+```
+
+**3. You can specify a default value like `size = 100`, which is used for missing and undefined props.**
+
+```js
+function Avatar({ person, size = 100 }) {
+  // ...
+}
+```
+
+- The default value is only used if the size prop is missing or if you pass `size={undefined}`. 
+But if you pass `size={null}` or `size={0}`, the default value will not be used.
+
+**4. You can forward ALL props with `<Avatar {...props} />` JSX spread syntax, but don’t overuse it!**
+
+- There’s nothing wrong with repetitive code—it can be more legible. But at times you may value conciseness. 
+Because `Profile` don’t use any of their props directly, it can make sense to use a more concise “spread” syntax:
+
+```js
+function Profile(props) {
+  return (
+    <div className="card">
+      <Avatar {...props} />
+    </div>
+  );
+}
+```
+
+**5. Nested JSX like `<Card><Avatar /></Card>` will appear as Card component’s `children` prop.**
+
+- You can think of a component with a children prop as having a “hole” that can be “filled in” by its parent components with arbitrary JSX. 
+You will often use the children prop for visual wrappers: panels, grids, etc.
+
+- When you nest content inside a JSX tag, the parent component will receive that content in a prop called `children`. 
+For example, the Card component below will receive a children prop set to <Avatar /> and render it in a wrapper div:
+
+```js
+import Avatar from './Avatar.js';
+
+function Card({ children }) {
+  return (
+    <div className="card">
+      {children}
+    </div>
+  );
+}
+
+export default function Profile() {
+  return (
+    <Card>
+      <Avatar/>
+    </Card>
+  );
+}
+
+```
+
+<div align='right'>
+  <a href="https://react.dev/learn/passing-props-to-a-component#passing-props-to-a-component">
+    <sup><b>React Docs ❱❱❱</b></sup>
+  </a>
+</div>
+</details><hr/>
+
+<details><summary><b>Props are not always static</b></summary><br/>
+
+- A component may receive different props over time.
+- Props reflect a component’s data at any point in time, rather than only in the beginning.
+- However, props are **immutable** — a term from computer science meaning “unchangeable”. 
+When a component needs to change its props (for example, in response to a user interaction or new data), 
+it will have to “ask” its parent component to pass it different props — a new object! 
+Its old props will then be cast aside, and eventually the JavaScript engine will reclaim the memory taken by them.
+<div align='right'>
+  <a href="https://react.dev/learn/passing-props-to-a-component#how-props-change-over-time">
+    <sup><b>React Docs ❱❱❱</b></sup>
+  </a>
+</div>
+</details><hr/>
+
+&nbsp;&nbsp;&nbsp;&nbsp;![][Recap]
+- Props are the information (including objects, arrays, and functions) that you pass to a JSX tag.
+- Props are read-only snapshots in time: every render receives a new version of props. 
+- You can’t change props. When you need interactivity, you’ll need to set state.
+
+<hr/>
 <details><summary><b></b></summary><br/>
 
 <div align='right'>

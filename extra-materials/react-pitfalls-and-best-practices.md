@@ -98,7 +98,7 @@ If this file gets crowded, you can always move it to a separate file.
 </div>
 </details><hr/>
 
-<details><summary><b>JSX: Use camelCase for HTML and SVG attributes (standard DOM props).</b></summary><br/>
+<details><summary><b>JSX: Use camelCase attributes written in JSX.</b></summary><br/>
 
 - JSX turns into JavaScript and attributes written in JSX become keys of JavaScript objects.
   In your own components, you will often want to read those attributes into variables.
@@ -129,6 +129,16 @@ If this file gets crowded, you can always move it to a separate file.
   </div>
 </details><hr/>
 
+<details><summary><b>Don’t try to “change props”, they are immutable. </b></summary><br/>
+
+- When you need to respond to the user input (like changing the selected color), you will need to “set state”.
+  <div align='right'>
+      <a href="https://react.dev/learn/passing-props-to-a-component#how-props-change-over-time">
+          <sup><b>React Docs ❱❱❱</b></sup>
+      </a>
+  </div>
+</details><hr/>
+
 <details><summary><b></b></summary><br/>
 
 - 
@@ -138,3 +148,4 @@ If this file gets crowded, you can always move it to a separate file.
       </a>
   </div>
 </details><hr/>
+
