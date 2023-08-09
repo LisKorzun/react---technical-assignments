@@ -78,6 +78,37 @@ Either './Button.js' or './Button' will work with React, though the former is cl
 <div align='right'><a href="#top"><sup><b>🔝 back to top 🔝</b></sup></a></div>
 <hr/>
 
+### EXERCISE 3𝕓
+![][Basic]
+
+Considering the code below, what will be displayed in the browser?
+
+```js
+function Messages({ messages = [] }) {
+    return <>{messages.length && <p>New messages</p>}</>;
+}
+
+export default function App() {
+    return <Messages />;
+}
+
+```
+
+<div>𝗢𝗣𝗧𝗜𝗢𝗡 𝟭 ➠ Nothing will be displayed. </div>
+<div>𝗢𝗣𝗧𝗜𝗢𝗡 𝟮 ➠  A <code>New messages</code> message will be displayed. </div>
+<div>𝗢𝗣𝗧𝗜𝗢𝗡 𝟯 ➠ <code>0</code> will be displayed.</div>
+<br />
+<details><summary>𝗔𝗡𝗦𝗪𝗘𝗥</summary>
+
+##### 𝗢𝗣𝗧𝗜𝗢𝗡 𝟯
+
+To test the condition, JavaScript converts the left side to a boolean automatically. 
+However, if the left side is 0, then the whole expression gets that value (0), and React will happily render `0` rather than nothing.
+</details>
+<br/>
+<div align='right'><a href="#top"><sup><b>🔝 back to top 🔝</b></sup></a></div>
+<hr/>
+
 ## INTERMEDIATE REACT CODING EXERCISES
 ### EXERCISE 2𝕚
 ![][Intermediate] [![][useEffect Badge]][useEffect Link]
