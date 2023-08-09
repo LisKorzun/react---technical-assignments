@@ -428,7 +428,7 @@ Its old props will then be cast aside, and eventually the JavaScript engine will
 
 In React, control flow (like conditions) is handled by JavaScript.
 
-- **You can return a JSX expression conditionally with an `if` statement.**
+**1. You can return a JSX expression conditionally with an `if` statement.**
 
 ```js
 function Item({ name, isPacked }) {
@@ -440,7 +440,7 @@ function Item({ name, isPacked }) {
 
 ```
 
-- **You can use a compact syntax for writing a conditional expression — the conditional operator or “ternary operator”.**
+**2. You can use a compact syntax for writing a conditional expression — the conditional operator or “ternary operator”.**
   - In JSX, `{cond ? <A /> : <B />}` means “_if `cond`, render `<A />`, otherwise `<B />`_”.
 
 ```js
@@ -453,7 +453,7 @@ function Item({ name, isPacked }) {
 }
 ```
 
-- **You can render some JSX when the condition is `true`, or render nothing otherwise using logical `AND` operator (`&&`) .**
+**3. You can render some JSX when the condition is `true`, or render nothing otherwise using logical `AND` operator (`&&`) .**
   - In JSX, `{cond && <A />}` means “_if `cond`, render `<A />`, otherwise nothing_”.
   - Don’t put numbers on the left side of `&&.` if the left side is 0, then the whole expression gets that value (0), and React will happily render `0` rather than nothing.
 
@@ -467,7 +467,7 @@ function Item({ name, isPacked }) {
 }
 ```
 
-- **You can conditionally save some JSX to a variable and then include it inside other JSX by using the curly braces.**
+**4. You can conditionally save some JSX to a variable and then include it inside other JSX by using the curly braces.**
 
 ```js
 function Item({ name, isPacked }) {
