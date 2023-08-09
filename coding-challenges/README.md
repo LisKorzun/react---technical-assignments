@@ -33,18 +33,7 @@
 
 Write a component from scratch e.g. write a `Congratulations` component that shows `<h1>Good job!</h1>`.
 
-<details><summary>𝗦𝗢𝗟𝗨𝗧𝗜𝗢𝗡</summary>
-
-```js
-export default function Congratulations() {
-  return (
-    <h1>Good job!</h1>
-  );
-}
-```
-
-<div align="right"><a href="/coding-challenges/basic/challenge-001/src/App.jsx"><sup><b>See solution</b></sup></a></div>
-</details>
+<a href="/coding-challenges/basic/challenge-001/src/App.jsx"><sup><b>See solution ❱❱❱</b></sup></a>
 
 ---
 ### CHALLENGE 2𝕓
@@ -98,57 +87,9 @@ export default function Gallery() {
         </div>
     );
 }
-
 ```
 
-<details><summary>𝗦𝗢𝗟𝗨𝗧𝗜𝗢𝗡</summary>
-
-```js
-function Profile({ imageId, name, awards = [], imageSize = 70 }) {
-    return (
-        <section className="profile">
-            <h2>{name}</h2>
-            <img
-                className="avatar"
-                src={getImageUrl(imageId)}
-                alt={name}
-                width={imageSize}
-                height={imageSize}
-            />
-            <div>
-                <b>Awards: {awards.length} </b>({awards.join(', ')})
-            </div>
-        </section>
-    )
-}
-
-export default function Gallery() {
-    return (
-        <div>
-            <h1>Notable Scientists</h1>
-            <Profile
-                imageId="szV5sdG"
-                name="Maria Skłodowska-Curie"
-                awards={[
-                    'Nobel Prize in Physics',
-                    'Nobel Prize in Chemistry',
-                    'Davy Medal',
-                    'Matteucci Medal',
-                ]}
-            />
-            <Profile
-                imageId="YfeOqp2"
-                name="Katsuko Saruhashi"
-                awards={['Miyake Prize for geochemistry', 'Tanaka Prize']}
-            />
-        </div>
-    )
-}
-
-```
-
-<div align="right"><a href="/coding-challenges/basic/challenge-002/src/App.jsx"><sup><b>See solution</b></sup></a></div>
-</details>
+<a href="/coding-challenges/basic/challenge-002/src/App.jsx"><sup><b>See solution ❱❱❱</b></sup></a>
 
 ## INTERMEDIATE REACT CODING CHALLENGES
 ### CHALLENGE 1𝕚
