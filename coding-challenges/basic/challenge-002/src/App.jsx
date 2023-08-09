@@ -1,6 +1,6 @@
 import { getImageUrl } from './utils.js'
 
-function Profile({ imageId, name, awards, imageSize = 70 }) {
+function Profile({ imageId, name, awards = [], imageSize = 70 }) {
     return (
         <section className="profile">
             <h2>{name}</h2>

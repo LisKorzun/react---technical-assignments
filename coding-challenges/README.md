@@ -46,6 +46,7 @@ export default function Congratulations() {
 <div align="right"><a href="/coding-challenges/basic/challenge-001/src/App.jsx"><sup><b>See solution</b></sup></a></div>
 </details>
 
+---
 ### CHALLENGE 2𝕓
 ![][Basic]
 
@@ -103,7 +104,7 @@ export default function Gallery() {
 <details><summary>𝗦𝗢𝗟𝗨𝗧𝗜𝗢𝗡</summary>
 
 ```js
-function Profile({ imageId, name, awards, imageSize = 70 }) {
+function Profile({ imageId, name, awards = [], imageSize = 70 }) {
     return (
         <section className="profile">
             <h2>{name}</h2>
@@ -146,7 +147,7 @@ export default function Gallery() {
 
 ```
 
-<div align="right"><a href="/coding-challenges/basic/challenge-001/src/App.jsx"><sup><b>See solution</b></sup></a></div>
+<div align="right"><a href="/coding-challenges/basic/challenge-002/src/App.jsx"><sup><b>See solution</b></sup></a></div>
 </details>
 
 ## INTERMEDIATE REACT CODING CHALLENGES
