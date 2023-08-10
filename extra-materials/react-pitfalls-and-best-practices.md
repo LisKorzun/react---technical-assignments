@@ -12,7 +12,7 @@
 <br />
 <br />
 
-<details><summary><b><sup> 💥 </sup> React components names must start with a capital letter.</b></summary><br/>
+<details><summary><b><sup> 💥</sup> React components names must start with a capital letter.</b></summary><br/>
 
 - React components are regular JavaScript functions, but their names must start with a capital letter or they won’t work!
     <div align='right'>
@@ -22,7 +22,7 @@
     </div>
 </details><hr/>
 
-<details><summary><b><sup> 💥 </sup> Return statements of React components can be written all on one line or must be wrapped in a pair of parentheses.</b></summary><br/>
+<details><summary><b><sup> 💥</sup> Return statements of React components can be written all on one line or must be wrapped in a pair of parentheses.</b></summary><br/>
 
 - Without parentheses, any code on the lines after return will be ignored!
     <div align='right'>
@@ -32,7 +32,7 @@
     </div>
 </details><hr/>
 
-<details><summary><b><sup> 💥 </sup> Never define a component inside another component.</b></summary><br/>
+<details><summary><b><sup> 💥</sup> Never define a component inside another component.</b></summary><br/>
 
 - Components can render other components, but you must never nest their definitions:
 ```js
@@ -112,7 +112,7 @@ If this file gets crowded, you can always move it to a separate file.
 </div>
 </details><hr/>
 
-<details><summary><b><sup> 💎 </sup> JSX: Enforce the consistent use of either double or single quotes in JSX attributes.</b></summary><br/>
+<details><summary><b><sup> 💎</sup> JSX: Enforce the consistent use of either double or single quotes in JSX attributes.</b></summary><br/>
 
 - JSX attribute values can contain string literals, which are delimited with single or double quotes.
 - Unlike string literals in JavaScript, string literals within JSX attributes can’t contain escaped quotes.
@@ -129,7 +129,7 @@ If this file gets crowded, you can always move it to a separate file.
   </div>
 </details><hr/>
 
-<details><summary><b><sup> 💥 </sup> Don’t try to “change props”, they are immutable. </b></summary><br/>
+<details><summary><b><sup> 💥</sup> Don’t try to “change props”, they are immutable. </b></summary><br/>
 
 - When you need to respond to the user input (like changing the selected color), you will need to “set state”.
   <div align='right'>
@@ -139,7 +139,7 @@ If this file gets crowded, you can always move it to a separate file.
   </div>
 </details><hr/>
 
-<details><summary><b><sup> 💎 </sup> Consider extracting child components to clean things up,  if your components get messy with too much nested conditional markup.</b></summary><br/>
+<details><summary><b><sup> 💎</sup> Consider extracting child components to clean things up,  if your components get messy with too much nested conditional markup.</b></summary><br/>
 
 - In React, markup is a part of your code, so you can use tools like variables and functions to tidy up complex expressions.
   <div align='right'>
@@ -149,7 +149,7 @@ If this file gets crowded, you can always move it to a separate file.
   </div>
 </details><hr/>
 
-<details><summary><b><sup> 💥 </sup> Don’t put numbers on the left side of <code>&&</code>.</b></summary><br/>
+<details><summary><b><sup> 💥</sup> Don’t put numbers on the left side of <code>&&</code>.</b></summary><br/>
 
 - To test the condition, JavaScript converts the left side to a boolean automatically. However, if the left side is 0, then the whole expression gets that value (`0`), and React will happily render `0` rather than nothing.
 - For example, a common mistake is to write code like `messageCount && <p>New messages</p>`. It’s easy to assume that it renders nothing when `messageCount` is `0`, but it really renders the `0` itself!
@@ -161,7 +161,7 @@ If this file gets crowded, you can always move it to a separate file.
 </div>
 </details><hr/>
 
-<details><summary><b><sup> 💎 </sup> KEY: Give each array item a <code>key</code>.</b></summary><br/>
+<details><summary><b><sup> 💎</sup> KEY: Give each array item a <code>key</code>.</b></summary><br/>
 
 - A string or a number that uniquely identifies it among other items in that array.
 - JSX keys in an array let us uniquely identify an item between its siblings. 
@@ -176,7 +176,7 @@ Even if the position changes due to reordering, the `key` lets React identify th
 </div>
 </details><hr/>
 
-<details><summary><b><sup> 💎 </sup> KEY: Include <code>key</code> in your data.</b></summary><br/>
+<details><summary><b><sup> 💎</sup> KEY: Include <code>key</code> in your data.</b></summary><br/>
 
 Rather than generating keys on the fly, you should include them in your data:
 - **Data from a database:** 
@@ -192,7 +192,7 @@ Rather than generating keys on the fly, you should include them in your data:
 </div>
 </details><hr/>
 
-<details><summary><b><sup> 💥 </sup> KEY: Index as a key often leads to subtle and confusing bugs.</b></summary><br/>
+<details><summary><b><sup> 💥</sup> KEY: Index as a key often leads to subtle and confusing bugs.</b></summary><br/>
 
 - You might be tempted to use an item’s `index` in the array as its `key`.
   In fact, that’s what React will use if you don’t specify a `key` at all.
@@ -206,7 +206,7 @@ Rather than generating keys on the fly, you should include them in your data:
 </div>
 </details><hr/>
 
-<details><summary><b><sup> 💥 </sup> KEY: Don’t generate keys while rendering.</b></summary><br/>
+<details><summary><b><sup> 💥</sup> KEY: Don’t generate keys while rendering.</b></summary><br/>
 
 - Do not generate keys on the fly, e.g. with `key={Math.random()}`.
 - This will cause keys to never match up between renders, leading to all your components and DOM being recreated every time.
