@@ -424,7 +424,7 @@ Its old props will then be cast aside, and eventually the JavaScript engine will
 - You can’t change props. When you need interactivity, you’ll need to set state.
 
 <hr/>
-<details><summary><b>Conditional Rendering</b></summary><br/>
+<details><summary><b>Conditional rendering</b></summary><br/>
 
 In React, control flow (like conditions) is handled by JavaScript.
 
@@ -507,9 +507,204 @@ function Item2({ name, isPacked }) {
 </div>
 </details><hr/>
 
+<details><summary><b>Rendering data from arrays</b></summary><br/>
+
+You will often need to show several instances of the same component using different data when building interfaces.
+In these situations, you can store that data in JavaScript objects and arrays and use methods like `map()` and `filter()` to render lists of components from them.
+
+```js
+// 1. Move the data into an array:
+const people = ['Alesia', 'John', 'Ben', 'Alex']
+
+// 2. Map the people members into a new array of JSX nodes:
+const listItems = people.map(person => <li>{person}</li>);
+
+// 3. Return listItems from your component:
+return <ul>{listItems}</ul>;
+```
+```js
+// Here is the result:
+const people = ['Alesia', 'John', 'Ben', 'Alex']
+
+export default function Members() {
+    const listItems = people.map(person =>
+        <li>{person}</li>
+    );
+    return <ul>{listItems}</ul>;
+}
+```
+<div align='right'>
+  <a href="https://react.dev/learn/rendering-lists#rendering-data-from-arrays">
+    <sup><b>React Docs ❱❱❱</b></sup>
+  </a>
+</div>
+</details><hr/>
+
+<details><summary><b>Filtering arrays of items</b></summary><br/>
+
+This data can be structured even more.
+```js
+const people = [{
+  name: 'Creola Katherine Johnson',
+  profession: 'mathematician',
+}, {
+  name: 'Mario José Molina-Pasquel Henríquez',
+  profession: 'chemist',
+}, {
+  name: 'Mohammad Abdus Salam',
+  profession: 'physicist',
+}, {
+  name: 'Percy Lavon Julian',
+  profession: 'chemist',  
+}];
+```
+
+Let’s say you want a way to only show people whose profession is `chemist`.
+
+```js
+// 1. Create a new array of just “chemist” people:
+const chemists = people.filter(person =>
+    person.profession === 'chemist'
+);
+
+// 2. Map over chemists:
+const listItems = chemists.map(person =>
+    <li>
+        <b>{person.name}:</b>
+        {' ' + person.profession}
+    </li>
+);
+
+// 3. Return the listItems from your component:
+return <ul>{listItems}</ul>;
+```
+```js
+// Here is the result:
+export default function List() {
+  const chemists = people.filter(person =>
+    person.profession === 'chemist'
+  );
+  const listItems = chemists.map(person =>
+      <li>
+          <b>{person.name}:</b>
+          {' ' + person.profession}
+      </li>
+  );
+  return <ul>{listItems}</ul>;
+}
+```
+
+<div align='right'>
+  <a href="https://react.dev/learn/rendering-lists#filtering-arrays-of-items">
+    <sup><b>React Docs ❱❱❱</b></sup>
+  </a>
+</div>
+</details><hr/>
+
+<details><summary><b>Keeping list items in order with <code>key</code></b></summary><br/>
+
+Notice that all the examples above show an error in the console:
+`Warning: Each child in a list should have a unique “key” prop.`
+
+You need to give each array item a `key` — **a string or a number that uniquely identifies it** among other items in that array:
+
+```js
+<li key={person.id}>...</li>
+```
+<div align="center"><sub>✧ JSX elements directly inside a <code>map()</code> call <b>always need keys</b>! ✧ </sub></div>
+
+Keys tell React which array item each component corresponds to, so that it can match them up later. 
+This becomes important if your array items can move (e.g. due to sorting), get inserted, or get deleted. 
+A well-chosen `key` helps React infer what exactly has happened, and make the correct updates to the DOM tree.
+<div align='right'>
+  <a href="https://react.dev/learn/rendering-lists#keeping-list-items-in-order-with-key">
+    <sup><b>React Docs ❱❱❱</b></sup>
+  </a>
+</div>
+</details><hr/>
+
+<details><summary><b>How to render not one, but several DOM nodes for each list item</b></summary><br/>
+
+The short `<>...</>` Fragment syntax won’t let you pass a key, 
+so you need to either group them into a single `<div>`, 
+or use the slightly longer and more explicit `<Fragment>` syntax:
+
+```js
+import { Fragment } from 'react';
+
+// ...
+
+const listItems = people.map(person =>
+  <Fragment key={person.id}>
+    <h1>{person.name}</h1>
+    <p>{person.bio}</p>
+  </Fragment>
+);
+```
+<div align='right'>
+  <a href="https://react.dev/learn/rendering-lists#displaying-several-dom-nodes-for-each-list-item">
+    <sup><b>React Docs ❱❱❱</b></sup>
+  </a>
+</div>
+</details><hr/>
+
+<details><summary><b>Where to get your <code>key</code></b></summary><br/>
+
+**1. Data from a database:** If your data is coming from a database, you can use the database keys/IDs, which are unique by nature.
+
+**2. Locally generated data:** If your data is generated and persisted locally, use an incrementing counter, `crypto.randomUUID()` or a package like `uuid` when creating items.
+<div align='right'>
+  <a href="https://react.dev/learn/rendering-lists#where-to-get-your-key">
+    <sup><b>React Docs ❱❱❱</b></sup>
+  </a>
+</div>
+</details><hr/>
+
+<details><summary><b>The rules of keys</b></summary><br/>
+
+- **Keys must be unique among siblings.**
+    - However, it’s okay to use the same keys for JSX nodes in **_different_** arrays.
+- **Keys must not change** or that defeats their purpose!
+  - Don’t generate them while rendering.
+<div align='right'>
+  <a href="https://react.dev/learn/rendering-lists#rules-of-keys">
+    <sup><b>React Docs ❱❱❱</b></sup>
+  </a>
+</div>
+</details><hr/>
+
+<details><summary><b>Why does React need keys?</b></summary><br/>
+
+**JSX keys** in an array let us uniquely identify an item between its siblings. 
+A well-chosen `key` provides more information than the position within the array. 
+Even if the position changes due to reordering, the `key` lets React identify the item throughout its lifetime.
+
+- **Index as a key often leads to subtle and confusing bugs.**
+  - You might be tempted to use an item’s `index` in the array as its `key`.
+    In fact, that’s what React will use if you don’t specify a `key` at all.
+    But the order in which you render items will change over time if an item is inserted, deleted, or if the array gets reordered.
+
+- **Do not generate keys on the fly, e.g. with `key={Math.random()}`.**
+  - This will cause keys to never match up between renders, leading to all your components and DOM being recreated every time. 
+  Not only is this slow, but it will also lose any user input inside the list items. 
+  Instead, use a stable ID based on the data.
+
+- **Note that your components won’t receive key as a prop.**
+  - It’s only used as a hint by React itself. 
+  If your component needs an <code>ID</code>, you have to pass it as a separate <code>prop</code>:</sub></div>
+  `<Profile key={id} userId={id} />`
+
+<div align='right'>
+  <a href="https://react.dev/learn/rendering-lists#why-does-react-need-keys">
+    <sup><b>React Docs ❱❱❱</b></sup>
+  </a>
+</div>
+</details><hr/>
+
 &nbsp;&nbsp;&nbsp;&nbsp;![][Recap]
 - In React, you can conditionally render JSX using JavaScript syntax like `if` statements, `&&`, and `? :` operators.
 - The shortcuts are common, but you don’t have to use them if you prefer plain `if`.
+- JSX elements directly inside a `map()` call always need keys!
 <hr/>
 
 <details><summary><b></b></summary><br/>
