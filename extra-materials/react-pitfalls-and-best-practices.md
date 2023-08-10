@@ -112,7 +112,7 @@ If this file gets crowded, you can always move it to a separate file.
 </div>
 </details><hr/>
 
-<details><summary><b><sup> 💎</sup> JSX: Enforce the consistent use of either double or single quotes in JSX attributes.</b></summary><br/>
+<details><summary><b><sup> 💎 </sup> JSX: Enforce the consistent use of either double or single quotes in JSX attributes.</b></summary><br/>
 
 - JSX attribute values can contain string literals, which are delimited with single or double quotes.
 - Unlike string literals in JavaScript, string literals within JSX attributes can’t contain escaped quotes.
