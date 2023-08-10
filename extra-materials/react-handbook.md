@@ -60,13 +60,13 @@ export default function Profile() {
 }
 
 ```
-- **Export the component.**
+**1. Export the component.**
   - The `export default` prefix is a standard JavaScript syntax (not specific to React).
 
-- **Define the function.** 
+**2. Define the function.** 
   - With `function Profile() { }` you define a JavaScript function with the name Profile.
 
-- **Add markup.**
+**3. Add markup.**
   - The component returns an <img /> tag with src and alt attributes. <img /> is written like HTML, 
   but it is actually JavaScript under the hood! This syntax is called [JSX](https://react.dev/learn/writing-markup-with-jsx), and it lets you embed markup inside JavaScript.
 
