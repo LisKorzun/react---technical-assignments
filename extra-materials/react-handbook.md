@@ -611,7 +611,7 @@ You need to give each array item a `key` — **a string or a number that uniquel
 ```js
 <li key={person.id}>...</li>
 ```
-<div align="center"><sub>✧ JSX elements directly inside a <code>map()</code> call <b>always need keys</b>! ✧ </sub></div>
+<div align="center"><sub>✧ JSX elements directly inside a <code>map()</code> call <b>always need keys</b>! ✧ </sub></div><br />
 
 Keys tell React which array item each component corresponds to, so that it can match them up later. 
 This becomes important if your array items can move (e.g. due to sorting), get inserted, or get deleted. 
@@ -707,6 +707,7 @@ Even if the position changes due to reordering, the `key` lets React identify th
 - You can use the [JavaScript array methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) to manipulate an array of data.
 - You need to give each array item a `key` — a string or a number that uniquely identifies it among other items in that array.
 - Rather than generating keys on the fly, you should include them in your data.
+- Keys must be unique among siblings. Keys must not change.
 <hr/>
 
 <details><summary><b></b></summary><br/>
