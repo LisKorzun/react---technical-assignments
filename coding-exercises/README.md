@@ -109,6 +109,46 @@ However, if the left side is 0, then the whole expression gets that value (0), a
 <div align='right'><a href="#top"><sup><b>🔝 back to top 🔝</b></sup></a></div>
 <hr/>
 
+### EXERCISE 4𝕓
+![][Basic]
+
+Are these two examples fully equivalent?
+
+```js
+// Example 1
+function Item({ name, isPacked }) {
+    if (isPacked) {
+        return <li className="item">{name} ✔</li>;
+    }
+    return <li className="item">{name}</li>;
+}
+
+// Example 2
+function Item({ name, isPacked }) {
+    return (
+        <li className="item">
+            {isPacked ? name + ' ✔' : name}
+        </li>
+    );
+}
+```
+
+<div>𝗢𝗣𝗧𝗜𝗢𝗡 𝟭 ➠ Yes </div>
+<div>𝗢𝗣𝗧𝗜𝗢𝗡 𝟮 ➠ No </div>
+<br />
+<details><summary>𝗔𝗡𝗦𝗪𝗘𝗥</summary>
+
+##### 𝗢𝗣𝗧𝗜𝗢𝗡 𝟭
+If you’re coming from an object-oriented programming background, 
+you might assume that the two examples above are subtly different because one of them may create two different “instances” of `<li>`. 
+But JSX elements aren’t “instances” because they don’t hold any internal state and aren’t real DOM nodes. They’re lightweight descriptions, like blueprints. 
+So these two examples, in fact, are completely equivalent. 
+[Preserving and Resetting State](https://react.dev/learn/conditional-rendering#are-these-two-examples-fully-equivalent) goes into detail about how this works.
+</details>
+<br/>
+<div align='right'><a href="#top"><sup><b>🔝 back to top 🔝</b></sup></a></div>
+<hr/>
+
 ## INTERMEDIATE REACT CODING EXERCISES
 ### EXERCISE 2𝕚
 ![][Intermediate] [![][useEffect Badge]][useEffect Link]

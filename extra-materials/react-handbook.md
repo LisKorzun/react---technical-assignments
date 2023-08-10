@@ -21,7 +21,7 @@
     that is used for building composable user interfaces (UI), especially for single-page applications. 
     It is used for handling view layer for web and mobile apps based on components in a declarative approach. <br/>
     <div align='center'><sub>✧ React was created by Jordan Walke, a software engineer working for Facebook. ✧<br/>
-    ✧ React was first deployed on Facebook's News Feed in 2011 and on Instagram in 2012. ✧</sub></div></p>
+    ✧ React was first deployed on Facebook's News Feed in 2011 and on Instagram in 2012. It was open-sourced at JSConf US in May 2013. ✧</sub></div></p>
 </details><hr/>
 
 <details><summary><b>What is a React component?</b></summary><br/>
