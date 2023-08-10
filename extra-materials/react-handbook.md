@@ -704,7 +704,9 @@ Even if the position changes due to reordering, the `key` lets React identify th
 &nbsp;&nbsp;&nbsp;&nbsp;![][Recap]
 - In React, you can conditionally render JSX using JavaScript syntax like `if` statements, `&&`, and `? :` operators.
 - The shortcuts are common, but you don’t have to use them if you prefer plain `if`.
-- JSX elements directly inside a `map()` call always need keys!
+- You can use the [JavaScript array methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) to manipulate an array of data.
+- You need to give each array item a `key` — a string or a number that uniquely identifies it among other items in that array.
+- Rather than generating keys on the fly, you should include them in your data.
 <hr/>
 
 <details><summary><b></b></summary><br/>

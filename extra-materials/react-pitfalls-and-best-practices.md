@@ -139,7 +139,7 @@ If this file gets crowded, you can always move it to a separate file.
   </div>
 </details><hr/>
 
-<details><summary><b><sup> 💎 </sup>Consider extracting child components to clean things up,  if your components get messy with too much nested conditional markup.</b></summary><br/>
+<details><summary><b><sup> 💎 </sup> Consider extracting child components to clean things up,  if your components get messy with too much nested conditional markup.</b></summary><br/>
 
 - In React, markup is a part of your code, so you can use tools like variables and functions to tidy up complex expressions.
   <div align='right'>
@@ -156,6 +156,64 @@ If this file gets crowded, you can always move it to a separate file.
 - To fix it, make the left side a boolean: `messageCount > 0 && <p>New messages</p>`.
 <div align='right'>
     <a href="https://react.dev/learn/conditional-rendering#logical-and-operator-">
+        <sup><b>React Docs ❱❱❱</b></sup>
+    </a>
+</div>
+</details><hr/>
+
+<details><summary><b><sup> 💎 </sup> KEY: Give each array item a <code>key</code>.</b></summary><br/>
+
+- A string or a number that uniquely identifies it among other items in that array.
+- JSX keys in an array let us uniquely identify an item between its siblings. 
+- A well-chosen `key` provides more information than the position within the array. 
+Even if the position changes due to reordering, the `key` lets React identify the item throughout its lifetime.
+- **Keys must be unique** among siblings. However, it’s okay to use the same keys for JSX nodes in different arrays. 
+- **Keys must not change** or that defeats their purpose! Don’t generate them while rendering.
+<div align='right'>
+    <a href="https://react.dev/learn/rendering-lists#why-does-react-need-keys">
+        <sup><b>React Docs ❱❱❱</b></sup>
+    </a>
+</div>
+</details><hr/>
+
+<details><summary><b><sup> 💎 </sup> KEY: Include <code>key</code> in your data.</b></summary><br/>
+
+Rather than generating keys on the fly, you should include them in your data:
+- **Data from a database:** 
+  - If your data is coming from a database, you can use the database keys/IDs, which are unique by nature.
+
+- **Locally generated data:** 
+  - If your data is generated and persisted locally, use an incrementing counter, `crypto.randomUUID()` or a package like `uuid` when creating items.
+
+<div align='right'>
+    <a href="https://react.dev/learn/rendering-lists#where-to-get-your-key">
+        <sup><b>React Docs ❱❱❱</b></sup>
+    </a>
+</div>
+</details><hr/>
+
+<details><summary><b><sup> 💥 </sup> KEY: Index as a key often leads to subtle and confusing bugs.</b></summary><br/>
+
+- You might be tempted to use an item’s `index` in the array as its `key`.
+  In fact, that’s what React will use if you don’t specify a `key` at all.
+  But the order in which you render items will change over time if an item is inserted, deleted, or if the array gets reordered.
+
+- **Keys must not change** or that defeats their purpose!
+<div align='right'>
+    <a href="https://react.dev/learn/rendering-lists#why-does-react-need-keys">
+        <sup><b>React Docs ❱❱❱</b></sup>
+    </a>
+</div>
+</details><hr/>
+
+<details><summary><b><sup> 💥 </sup> KEY: Don’t generate keys while rendering.</b></summary><br/>
+
+- Do not generate keys on the fly, e.g. with `key={Math.random()}`.
+- This will cause keys to never match up between renders, leading to all your components and DOM being recreated every time.
+  Not only is this slow, but it will also lose any user input inside the list items.
+  Instead, use a stable ID based on the data.
+<div align='right'>
+    <a href="https://react.dev/learn/rendering-lists#why-does-react-need-keys">
         <sup><b>React Docs ❱❱❱</b></sup>
     </a>
 </div>
