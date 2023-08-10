@@ -28,9 +28,8 @@
     <p>React applications are built from isolated pieces of UI called components. 
     A component is a piece of the UI (user interface) that has its own logic and appearance.  
     <b><u>A React component is a JavaScript function that returns markup.</u></b> 
-    Components can be as small as a button, or as large as an entire page. 
-    React component names must always start with a capital letter, while HTML tags must be lowercase.</p>
-    
+    Components can be as small as a button, or as large as an entire page. </p>
+ 
 ```js
 function MyButton() {
   return (
@@ -38,6 +37,8 @@ function MyButton() {
   );
 }
 ```
+
+**⛓ React component names must always start with a capital letter, while HTML tags must be lowercase.**
 <div align='center'>
     <sup>✧ React lets you combine your markup, CSS, and JavaScript into custom “components”, reusable UI elements for your app. ✧<br/>
     ✧ Just like with HTML tags, you can compose, order and nest components to design whole pages. ✧<br/>✧ As your project grows, 
@@ -59,15 +60,15 @@ export default function Profile() {
 }
 
 ```
-**Step 1: Export the component.**
-The `export default` prefix is a standard JavaScript syntax (not specific to React).
+- **Export the component.**
+  - The `export default` prefix is a standard JavaScript syntax (not specific to React).
 
-**Step 2: Define the function.** 
-With `function Profile() { }` you define a JavaScript function with the name Profile.
+- **Define the function.** 
+  - With `function Profile() { }` you define a JavaScript function with the name Profile.
 
-**Step 3: Add markup.**
-The component returns an <img /> tag with src and alt attributes. <img /> is written like HTML, 
-but it is actually JavaScript under the hood! This syntax is called [JSX](https://react.dev/learn/writing-markup-with-jsx), and it lets you embed markup inside JavaScript.
+- **Add markup.**
+  - The component returns an <img /> tag with src and alt attributes. <img /> is written like HTML, 
+  but it is actually JavaScript under the hood! This syntax is called [JSX](https://react.dev/learn/writing-markup-with-jsx), and it lets you embed markup inside JavaScript.
 
 **⛓ Return statements can be written all on one line 
 or you must wrap it in a pair of parentheses.**
@@ -88,10 +89,10 @@ function ComponentA() {
 
 export default function ComponentB() {
   return (
-          <>
-            <p>Component B</p>
-            <ComponentA />
-          </>
+      <>
+          <p>Component B</p>
+          <ComponentA />
+      </>
   );
 }
 ```
