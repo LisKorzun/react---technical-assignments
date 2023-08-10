@@ -197,8 +197,8 @@ Rather than generating keys on the fly, you should include them in your data:
 - You might be tempted to use an item’s `index` in the array as its `key`.
   In fact, that’s what React will use if you don’t specify a `key` at all.
   But the order in which you render items will change over time if an item is inserted, deleted, or if the array gets reordered.
-
 - **Keys must not change** or that defeats their purpose!
+- In rare cases where items never reorder, `index` as a `key` is acceptable.
 <div align='right'>
     <a href="https://react.dev/learn/rendering-lists#why-does-react-need-keys">
         <sup><b>React Docs ❱❱❱</b></sup>

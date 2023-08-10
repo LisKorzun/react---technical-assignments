@@ -684,6 +684,7 @@ Even if the position changes due to reordering, the `key` lets React identify th
   - You might be tempted to use an item’s `index` in the array as its `key`.
     In fact, that’s what React will use if you don’t specify a `key` at all.
     But the order in which you render items will change over time if an item is inserted, deleted, or if the array gets reordered.
+  - In rare cases where items never reorder, `index` as a `key` is acceptable.
 
 - **Do not generate keys on the fly, e.g. with `key={Math.random()}`.**
   - This will cause keys to never match up between renders, leading to all your components and DOM being recreated every time. 
