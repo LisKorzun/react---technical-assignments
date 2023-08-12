@@ -89,10 +89,10 @@ function ComponentA() {
 
 export default function ComponentB() {
   return (
-      <>
+      <div>
           <p>Component B</p>
           <ComponentA />
-      </>
+      </div>
   );
 }
 ```

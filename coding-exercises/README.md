@@ -112,25 +112,21 @@ However, if the left side is 0, then the whole expression gets that value (0), a
 ### EXERCISE 4𝕓
 ![][Basic]
 
-Are these two examples fully equivalent?
+In React components, are these two examples of return statements fully equivalent?
 
 ```js
 // Example 1
-function Item({ name, isPacked }) {
-    if (isPacked) {
-        return <li className="item">{name} ✔</li>;
-    }
-    return <li className="item">{name}</li>;
+if (isPacked) {
+    return <li className="item">{name} ✔</li>;
 }
+return <li className="item">{name}</li>;
 
 // Example 2
-function Item({ name, isPacked }) {
-    return (
-        <li className="item">
-            {isPacked ? name + ' ✔' : name}
-        </li>
-    );
-}
+return (
+    <li className="item">
+        {isPacked ? name + ' ✔' : name}
+    </li>
+);
 ```
 
 <div>𝗢𝗣𝗧𝗜𝗢𝗡 𝟭 ➠ Yes </div>
