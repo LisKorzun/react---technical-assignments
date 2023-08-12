@@ -711,6 +711,176 @@ Even if the position changes due to reordering, the `key` lets React identify th
 - Rather than generating keys on the fly, you should include them in your data.
 - Keys must be unique among siblings. Keys must not change.
 <hr/>
+<details><summary><b>What is purity?</b></summary><br/>
+
+In computer science (and especially the world of functional programming), a **pure function** is a function with the following characteristics:
+
+- **It minds its own business**. 
+  - It does not change any objects or variables that existed before it was called.
+- **Same inputs, same output**. 
+  - Given the same inputs, a pure function should always return the same result.
+
+React is designed around this concept. 
+
+**⛓ React assumes that every component you write is a pure function.**
+
+This means that React components you write must always return the same JSX given the same inputs.
+<div align='right'>
+  <a href="https://react.dev/learn/keeping-components-pure#purity-components-as-formulas">
+    <sup><b>React Docs ❱❱❱</b></sup>
+  </a>
+</div>
+</details><hr/>
+
+<details><summary><b>React’s rendering process must always be pure</b></summary><br/>
+
+Components should only `return` their JSX, and `not change` any objects or variables that existed before rendering—that would make them `impure`!
+
+```js
+let guest = 0;
+
+function Cup() {
+  // 🔴 Bad: changing a preexisting variable!
+  guest = guest + 1;
+  return <h2>Tea cup for guest #{guest}</h2>;
+}
+
+export default function TeaSet() {
+  return (
+    <>
+      <Cup />
+      <Cup />
+      <Cup />
+    </>
+  );
+}
+```
+
+The problem is that the component changes a `preexisting variable` while rendering. 
+This is often called a `“mutation”` to make it sound a bit scarier. 
+
+<div align='center'><sup>✧ Pure functions don’t mutate variables outside of the function’s scope or objects that were created before the call. ✧</sup></div>
+
+This means that **calling this component multiple times will produce different JSX** depending on when they were rendered! That’s not predictable.
+
+```js
+// 🟢 You can fix this component by passing guest as a prop instead:
+function Cup({ guest }) {
+  return <h2>Tea cup for guest #{guest}</h2>;
+}
+
+export default function TeaSet() {
+  return (
+    <>
+      <Cup guest={1} />
+      <Cup guest={2} />
+      <Cup guest={3} />
+    </>
+  );
+}
+```
+
+Now your component is pure, as the JSX it returns only depends on the `guest` prop.
+<div align='right'>
+  <a href="https://react.dev/learn/keeping-components-pure#side-effects-unintended-consequences">
+    <sup><b>React Docs ❱❱❱</b></sup>
+  </a>
+</div>
+</details><hr/>
+
+<details><summary><b>How to detect impure calculations</b></summary><br/>
+
+in React there are three kinds of inputs that you can read while rendering: `props`, `state`, and `context`. 
+You should always treat these inputs as `read-only`.
+
+When you want to change something in response to user input, you should `set state` instead of writing to a variable. 
+You should never change preexisting variables or objects while your component is rendering.
+
+React offers a “Strict Mode” in which it calls each component’s function twice during development. 
+By calling the component functions **twice**, `Strict Mode` helps find components that break these rules.
+**Pure functions only calculate, so calling them twice won’t change anything.**
+But if the function is `impure`, so calling it twice will break it.
+
+Strict Mode has no effect in production, so it won’t slow down the app for your users.
+<div align='right'>
+  <a href="https://react.dev/learn/keeping-components-pure#detecting-impure-calculations-with-strict-mode">
+    <sup><b>React Docs ❱❱❱</b></sup>
+  </a>
+</div>
+</details><hr/>
+
+<details><summary><b>Local mutation is OK</b></summary><br/>
+
+It’s completely fine to change variables and objects that you’ve just created while rendering.
+
+```js
+function Cup({ guest }) {
+  return <h2>Tea cup for guest #{guest}</h2>;
+}
+
+export default function TeaGathering() {
+  let cups = [];
+  for (let i = 1; i <= 12; i++) {
+    cups.push(<Cup key={i} guest={i} />);
+  }
+  return cups;
+}
+```
+
+It’s fine because you’ve created them during the same render, inside `TeaGathering`. 
+No code outside of `TeaGathering` will ever know that this happened. 
+This is called `“local mutation”`—it’s like your component’s little secret.
+<div align='right'>
+  <a href="https://react.dev/learn/keeping-components-pure#local-mutation-your-components-little-secret">
+    <sup><b>React Docs ❱❱❱</b></sup>
+  </a>
+</div>
+</details><hr/>
+
+<details><summary><b>Side effects and where you can cause them</b></summary><br/>
+
+At some point, somewhere, something has to change. These changes — 
+updating the screen, starting an animation, changing the data — are called `side effects`. 
+They’re things that happen `“on the side”`, not during rendering.
+
+In React, side effects usually belong inside **event handlers**. 
+Event handlers are functions that React runs when you perform some action—for example, when you click a button. 
+Even though event handlers are defined inside your component, they don’t run during rendering! 
+**So event handlers don’t need to be pure.**
+<div align='right'>
+  <a href="https://react.dev/learn/keeping-components-pure#where-you-_can_-cause-side-effects">
+    <sup><b>React Docs ❱❱❱</b></sup>
+  </a>
+</div>
+</details><hr/>
+
+<details><summary><b>Benefits of purity in React</b></summary><br/>
+
+- Your components could run in a different environment — for example, on the server! 
+Since they return the same result for the same inputs, one component can serve many user requests.
+- You can **improve performance** by skipping rendering components whose inputs have not changed. 
+This is safe because pure functions always return the same results, so they are safe to cache.
+- If some data changes in the middle of rendering a deep component tree, 
+React can restart rendering without wasting time to finish the outdated render. 
+Purity makes it safe to stop calculating at any time.
+
+From data fetching to animations to performance, keeping components pure unlocks the power of the React paradigm.
+<div align='right'>
+  <a href="https://react.dev/learn/keeping-components-pure#why-does-react-care-about-purity">
+    <sup><b>React Docs ❱❱❱</b></sup>
+  </a>
+</div>
+</details><hr/>
+
+&nbsp;&nbsp;&nbsp;&nbsp;![][Recap]
+- A component must be **pure**, meaning:
+  - **It minds its own business.** It should not change any objects or variables that existed before rendering. 
+  - **Same inputs, same output.** Given the same inputs, a component should always return the same JSX. 
+- Rendering can happen at any time, so components **should not depend on each others’ rendering sequence**. 
+- You **should not mutate any of the inputs** that your components use for rendering. That includes `props`, `state`, and `context`. To update the screen, **“set” state** instead of mutating preexisting objects. 
+- Strive to express your component’s logic in the JSX you return. When you need to “change things”, you’ll usually want to do it in an event handler. As a last resort, you can useEffect. 
+- Writing pure functions takes a bit of practice, but it unlocks the power of React’s paradigm.
+<hr/>
 
 <details><summary><b></b></summary><br/>
 

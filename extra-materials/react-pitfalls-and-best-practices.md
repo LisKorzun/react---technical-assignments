@@ -219,6 +219,16 @@ Rather than generating keys on the fly, you should include them in your data:
 </div>
 </details><hr/>
 
+<details><summary><b><sup> 💎</sup>  React’s rendering process must always be pure.</b></summary><br/>
+
+-
+<div align='right'>
+    <a href="">
+        <sup><b>React Docs ❱❱❱</b></sup>
+    </a>
+</div>
+</details><hr/>
+
 <details><summary><b></b></summary><br/>
 
 - 
