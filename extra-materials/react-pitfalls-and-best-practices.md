@@ -219,11 +219,29 @@ Rather than generating keys on the fly, you should include them in your data:
 </div>
 </details><hr/>
 
-<details><summary><b><sup> 💎</sup>  React’s rendering process must always be pure.</b></summary><br/>
+<details><summary><b><sup> 💎</sup>  A React component must be pure.</b></summary><br/>
 
--
+- A component must be **pure**, meaning:
+  - **It minds its own business.** It should not change any objects or variables that existed before rendering.
+  - **Same inputs, same output.** Given the same inputs, a component should always return the same JSX.
+- Rendering can happen at any time, so components **should not depend on each others’ rendering sequence**.
+- You should never change **preexisting variables or objects** while your component is rendering.
+
 <div align='right'>
-    <a href="">
+    <a href="https://react.dev/learn/keeping-components-pure">
+        <sup><b>React Docs ❱❱❱</b></sup>
+    </a>
+</div>
+</details><hr/>
+
+<details><summary><b><sup> 💎</sup>  Don't mutate any of the inputs.</b></summary><br/>
+
+- In React there are three kinds of inputs that your components use for rendering: `props`, `state`, and `context`. 
+- You should always treat these inputs as `read-only`.
+- When you want to change something in response to user input, you should set state instead of writing to a variable.
+- To update the screen, set state instead of mutating preexisting objects.
+<div align='right'>
+    <a href="https://react.dev/learn/keeping-components-pure#detecting-impure-calculations-with-strict-mode">
         <sup><b>React Docs ❱❱❱</b></sup>
     </a>
 </div>
