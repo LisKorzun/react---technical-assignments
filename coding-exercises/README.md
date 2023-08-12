@@ -47,7 +47,6 @@ export default function Avatar() {
 ##### 𝗢𝗣𝗧𝗜𝗢𝗡 𝟯
 Return statements of React components can be written all on one line or must be wrapped in a pair of parentheses.
 </details>
-<br/>
 <div align='right'><a href="#top"><sup><b>🔝 back to top 🔝</b></sup></a></div>
 <hr/>
 
@@ -74,7 +73,6 @@ export default function Avatar() {
 When you write a `default` import, you can put `any name` you want after import.
 Either './Button.js' or './Button' will work with React, though the former is closer to how native ES Modules work.
 </details>
-<br/>
 <div align='right'><a href="#top"><sup><b>🔝 back to top 🔝</b></sup></a></div>
 <hr/>
 
@@ -105,7 +103,6 @@ export default function App() {
 To test the condition, JavaScript converts the left side to a boolean automatically. 
 However, if the left side is 0, then the whole expression gets that value (0), and React will happily render `0` rather than nothing.
 </details>
-<br/>
 <div align='right'><a href="#top"><sup><b>🔝 back to top 🔝</b></sup></a></div>
 <hr/>
 
@@ -141,7 +138,6 @@ But JSX elements aren’t “instances” because they don’t hold any internal
 So these two examples, in fact, are completely equivalent. 
 [Preserving and Resetting State](https://react.dev/learn/conditional-rendering#are-these-two-examples-fully-equivalent) goes into detail about how this works.
 </details>
-<br/>
 <div align='right'><a href="#top"><sup><b>🔝 back to top 🔝</b></sup></a></div>
 <hr/>
 
@@ -195,7 +191,6 @@ export default function EmployeesList() {
 }
 ```
 </details>
-<br/>
 <div align='right'><a href="#top"><sup><b>🔝 back to top 🔝</b></sup></a></div>
 <hr/>
 
